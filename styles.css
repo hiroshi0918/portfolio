@@ -1443,3 +1443,138 @@ a:hover {
       0 0 0 6px rgba(224, 122, 95, 0.2);
   }
 }
+
+/* =========================================================
+   Slim refresh — calmer chrome, product-first layout
+   ========================================================= */
+
+.hero-text-link {
+  align-self: center;
+  margin-left: 0.35rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.hero-text-link:hover {
+  color: var(--accent-strong);
+  border-bottom-color: rgba(201, 106, 80, 0.45);
+}
+
+.hero-actions {
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.hero-lead {
+  margin-bottom: 1.5rem;
+  max-width: 34rem;
+  font-size: 1.02rem;
+  line-height: 1.85;
+}
+
+.about-card--solo {
+  max-width: 40rem;
+}
+
+.about-card--solo p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-meta-inline {
+  margin-top: 1rem !important;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted) !important;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+}
+
+.project-why {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.project-proof {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.project-body {
+  gap: 0.75rem;
+}
+
+.grow-gallery--simple {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 0.85rem;
+  min-height: 280px;
+  align-items: stretch;
+}
+
+.grow-gallery--simple .shot-frame--hero img {
+  min-height: 280px;
+}
+
+.grow-gallery--simple .shot-frame img {
+  height: 100%;
+  min-height: 280px;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+.talk-card--slim .talk-body {
+  gap: 0.65rem;
+}
+
+.talk-visual--slim {
+  padding: 1.15rem 1.15rem 0.5rem;
+}
+
+.talk-slides--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 720px;
+}
+
+.timeline--compact .timeline-card {
+  padding: 0.95rem 1.2rem;
+}
+
+.timeline--compact .timeline-org {
+  margin-bottom: 0;
+}
+
+.timeline--compact .timeline-role {
+  font-size: 1.05rem;
+  margin-bottom: 0.15rem;
+}
+
+.timeline--compact .timeline-marker {
+  margin-top: 1rem;
+}
+
+.section-head {
+  margin-bottom: 1.35rem;
+}
+
+.contact-lead {
+  margin-bottom: 1.1rem;
+}
+
+@media (max-width: 900px) {
+  .grow-gallery--simple {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .grow-gallery--simple .shot-frame--hero img,
+  .grow-gallery--simple .shot-frame img {
+    min-height: 180px;
+    aspect-ratio: 16 / 10;
+  }
+}
