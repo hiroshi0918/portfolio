@@ -1,6 +1,6 @@
 # portfolio
 
-寺島 宏（Hiroshi Terashima）のポートフォリオサイト（静的 HTML / CSS / JS）。
+寺嶋 裕（Hiroshi Terashima）のポートフォリオサイト（静的 HTML / CSS / JS）。
 
 想定公開 URL: **https://hiroshi0918.github.io/portfolio/**
 
@@ -46,18 +46,20 @@ python3 -m http.server 8080
 ├── serve-local.sh
 ├── .nojekyll
 ├── assets/
+│   ├── brand/monogram.svg
+│   └── projects/
+│       ├── cocolog/   # App Store スクリーンショット
+│       └── grow/      # プロダクト画面 + architecture.svg
 ├── .github/
 │   └── workflows/
 │       └── pages.yml
 └── README.md
 ```
 
-## TODO（公開前）
-
-- [ ] **経歴セクション**: 期間・所属・業務のプレースホルダを実データで埋める（架空の勤務先・日付は入れない）
-- [ ] Contact: 必要ならメール / 電話を追記
-- [ ] Private リポ（`cocolog` / `grow`）の閲覧方法をレビュアに伝える（Collaborator 招待など）
-
 ## 作品の比重
 
 **ココロパレット（cocolog）** と **Grow** は同等の比重（並びのカード）で掲載しています。補足として `edinet_data_pipeline` のみ小さめに記載。`movies_rank` / `MemoApp` は未掲載。
+
+## 連絡
+
+公開サイト上の連絡先はメール（`terahiro0918@gmail.com`）と GitHub のみ。住所・電話は掲載しません。

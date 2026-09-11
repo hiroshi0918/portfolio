@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="寺島 宏（Hiroshi Terashima）— アプリ開発エンジニアのポートフォリオ。ココロパレット（cocolog）と Grow を中心に紹介。" />
+  <meta name="description" content="寺嶋 裕（Hiroshi Terashima）— ビジネスコーチ元 PdM。ココロパレットと Grow でアプリ実装力を示すポートフォリオ。" />
   <meta name="theme-color" content="#0c1222" />
-  <title>寺島 宏 — Portfolio</title>
+  <title>寺嶋 裕 — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/portfolio/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>寺</text></svg>" />
+  <link rel="icon" href="/portfolio/assets/brand/monogram.svg" type="image/svg+xml" />
 </head>
 <body>
   <a class="skip-link" href="#main">本文へスキップ</a>
 
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="logo" href="/portfolio/">寺島 宏</a>
+      <a class="logo" href="/portfolio/">寺嶋 裕</a>
       <nav class="nav" aria-label="メインナビゲーション">
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" id="nav-toggle">
           <span class="sr-only">メニュー</span>
@@ -40,25 +40,32 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="container hero-inner">
-        <p class="hero-eyebrow">App Engineer · Data Engineer</p>
-        <h1 id="hero-title" class="hero-title">
-          <span class="hero-name-ja">寺島 宏</span>
-          <span class="hero-name-en">Hiroshi Terashima</span>
-        </h1>
-        <p class="hero-lead">
-          TypeScript を軸に、企画から実装・公開・運用までを一人で通した
-          <strong>プロダクト開発</strong>の実績を紹介します。
-          特に次の <strong>2作品</strong> を同じ比重でご覧ください。
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">作品を見る</a>
-          <a class="btn btn-ghost" href="https://github.com/hiroshi0918" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">元 PdM → 実装力を示すポートフォリオ</p>
+            <h1 id="hero-title" class="hero-title">
+              <span class="hero-name-ja">寺嶋 裕</span>
+              <span class="hero-name-en">Hiroshi Terashima</span>
+            </h1>
+            <p class="hero-lead">
+              ビジネスコーチで BtoB コーチングアプリの PdM を務めたあと、いまはデータエンジニアとして実装に向き合っています。
+              再リリースされたプロダクトの <strong>エンジニアリング側</strong> に加わるにあたり、
+              ドメイン理解に加え、企画〜実装〜公開まで一人で通した <strong>ココロパレット</strong> と <strong>Grow</strong> で実装力を見てほしいです。
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">作品を見る</a>
+              <a class="btn btn-ghost" href="https://github.com/hiroshi0918" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+            <ul class="hero-chips" aria-label="注目ポイント">
+              <li>ビジネスコーチ元 PdM</li>
+              <li>iOS 公開済みアプリ</li>
+              <li>認可・課金・リアルタイム設計</li>
+            </ul>
+          </div>
+          <div class="hero-mark" aria-hidden="true">
+            <img src="/portfolio/assets/brand/monogram.svg" alt="" width="160" height="160" />
+          </div>
         </div>
-        <ul class="hero-chips" aria-label="注目ポイント">
-          <li>iOS 公開済みアプリ</li>
-          <li>課金・リアルタイム授業</li>
-          <li>AI オプトイン設計</li>
-        </ul>
       </div>
     </section>
 
@@ -67,27 +74,35 @@
       <div class="container">
         <header class="section-head">
           <p class="section-label">About</p>
-          <h2 id="about-title">いま見てほしいこと</h2>
+          <h2 id="about-title">元同僚のリードへ — いま見てほしいこと</h2>
         </header>
         <div class="about-grid">
           <div class="about-card">
             <p>
-              Data Engineer としての実務に加え、<strong>自分で企画〜実装〜公開まで通したアプリ開発</strong>の実績を見てほしいです。
-              言語は TypeScript 中心ですが、設計・プロダクト実装・運用の判断力を重視しています（AI 活用含む）。
+              ビジネスコーチ株式会社では、BtoB コーチングアプリの <strong>プロダクトマネージャー</strong>（2020-08〜2024-05）として
+              要件・ベンダー・受け入れ・方向転換・アジャイル移行に関わっていました。ドメインとプロダクトの文脈はすでに共有しています。
+            </p>
+            <p>
+              いま見てほしいのは、その後に積み上げた <strong>ハンズオンの実装力</strong> です。
+              ココロパレット（App Store 公開）と Grow（認可・課金・LiveKit 授業）を同等の比重で置き、設計から出荷までの判断を示します。
             </p>
             <p class="about-note">
-              「学習用デモ」ではなく、実ユーザー向けに出荷したプロダクトと、認可・課金・非同期処理まで設計した Web サービスを並べています。
+              現職はデータエンジニア（大手化粧品会社向け派遣）。データ基盤・RAG・大規模連携の実務経験もありますが、本ページの主眼はアプリ実装の証明です。
             </p>
           </div>
           <aside class="about-aside" aria-label="プロフィール要約">
             <dl class="meta-list">
               <div>
                 <dt>Name</dt>
-                <dd>寺島 宏 / Hiroshi Terashima</dd>
+                <dd>寺嶋 裕 / Hiroshi Terashima</dd>
+              </div>
+              <div>
+                <dt>Born</dt>
+                <dd>1994-09-18</dd>
               </div>
               <div>
                 <dt>Role</dt>
-                <dd>App Engineer · Data Engineer</dd>
+                <dd>Data Engineer · App Engineer</dd>
               </div>
               <div>
                 <dt>GitHub</dt>
@@ -95,15 +110,27 @@
               </div>
               <div>
                 <dt>Focus</dt>
-                <dd>TypeScript / モバイル / BaaS / AI</dd>
+                <dd>データ基盤 / TypeScript / PM</dd>
               </div>
             </dl>
           </aside>
         </div>
+
+        <div class="certs" aria-labelledby="certs-title">
+          <h3 id="certs-title" class="certs-title">資格・スコア</h3>
+          <ul class="cert-chips">
+            <li>TOEIC 895</li>
+            <li>AWS SAA</li>
+            <li>基本情報</li>
+            <li>応用情報</li>
+            <li>統計検定2級</li>
+            <li>ProfileXT / CheckPoint360 認定</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- Projects — equal weight -->
+    <!-- Projects -->
     <section class="section section-projects" id="projects" aria-labelledby="projects-title">
       <div class="container">
         <header class="section-head">
@@ -114,75 +141,98 @@
 
         <div class="project-grid">
           <!-- cocolog -->
-          <article class="project-card" id="cocolog">
-            <div class="project-card-top">
-              <span class="project-badge project-badge-shipped">App Store 公開済み</span>
-              <span class="project-kind">Mobile · iOS</span>
+          <article class="project-card project-card--visual" id="cocolog">
+            <div class="project-visual">
+              <div class="phone-gallery" role="group" aria-label="ココロパレットの画面ギャラリー">
+                <figure class="phone-frame">
+                  <img src="/portfolio/assets/projects/cocolog/home.png" alt="ココロパレットのホーム画面。感情パレットと記録の一覧" loading="lazy" width="390" height="844" />
+                </figure>
+                <figure class="phone-frame">
+                  <img src="/portfolio/assets/projects/cocolog/voice-input.png" alt="ココロパレットの音声入力画面" loading="lazy" width="390" height="844" />
+                </figure>
+                <figure class="phone-frame phone-frame--sm">
+                  <img src="/portfolio/assets/projects/cocolog/emotion-selection.png" alt="ココロパレットの感情選択画面" loading="lazy" width="390" height="844" />
+                </figure>
+                <figure class="phone-frame phone-frame--sm">
+                  <img src="/portfolio/assets/projects/cocolog/summary.png" alt="ココロパレットの振り返りサマリー画面" loading="lazy" width="390" height="844" />
+                </figure>
+              </div>
             </div>
-            <h3 class="project-title">ココロパレット</h3>
-            <p class="project-repo">リポ名: <code>cocolog</code></p>
-            <p class="project-summary">
-              日々の出来事と感情を記録し、振り返るセルフケアアプリ。
-              感情パレット・音声/テキスト入力・振り返りノートを備え、AI はオプトインで利用できます。
-            </p>
-            <ul class="project-points">
-              <li>感情記録・音声/テキスト入力・日本語約60語の感情パレット</li>
-              <li>振り返りノート・カレンダーなどプロダクト実装一式</li>
-              <li>AI オプトイン設計（同意なしでもコア機能は利用可）</li>
-              <li>dev / prod / Emulator 環境分離、App Store 提出までの一連</li>
-            </ul>
-            <div class="project-stack" aria-label="技術スタック">
-              <span>React Native (Expo)</span>
-              <span>TypeScript</span>
-              <span>Firebase</span>
-              <span>Claude</span>
-              <span>Whisper</span>
+            <div class="project-body">
+              <div class="project-card-top">
+                <span class="project-badge project-badge-shipped">App Store 公開済み</span>
+                <span class="project-kind">Mobile · iOS</span>
+              </div>
+              <h3 class="project-title">ココロパレット</h3>
+              <p class="project-repo">リポ名: <code>cocolog</code></p>
+              <p class="project-summary">
+                日々の出来事と感情を記録し、振り返るセルフケアアプリ。
+                感情パレット・音声/テキスト入力・振り返りノートを備え、AI はオプトインで利用できます。
+              </p>
+              <ul class="project-points">
+                <li>感情記録・音声/テキスト・日本語約60語の感情パレット</li>
+                <li>振り返りノート・カレンダーなどプロダクト実装一式</li>
+                <li>AI オプトイン設計（同意なしでもコア機能は利用可）</li>
+                <li>環境分離から App Store 提出までの一連</li>
+              </ul>
+              <div class="project-stack" aria-label="技術スタック">
+                <span>React Native (Expo)</span>
+                <span>TypeScript</span>
+                <span>Firebase</span>
+                <span>Claude</span>
+                <span>Whisper</span>
+              </div>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://apps.apple.com/jp/app/6760936737" target="_blank" rel="noopener noreferrer">App Store</a>
+                <a class="btn btn-ghost btn-sm" href="https://github.com/hiroshi0918/cocolog" target="_blank" rel="noopener noreferrer">GitHub <span class="muted">(Private)</span></a>
+              </div>
             </div>
-            <div class="project-links">
-              <a class="btn btn-primary btn-sm" href="https://apps.apple.com/jp/app/6760936737" target="_blank" rel="noopener noreferrer">App Store</a>
-              <a class="btn btn-ghost btn-sm" href="https://github.com/hiroshi0918/cocolog" target="_blank" rel="noopener noreferrer">GitHub <span class="muted">(Private)</span></a>
-            </div>
-            <p class="project-lead-note">
-              <strong>リード向け:</strong> 実ユーザー向けに公開したアプリ。モバイル・BaaS・AI API・プライバシー配慮まで一通り見られます。
-            </p>
           </article>
 
           <!-- Grow -->
-          <article class="project-card" id="grow">
-            <div class="project-card-top">
-              <span class="project-badge project-badge-web">Web プロダクト</span>
-              <span class="project-kind">Full-stack · SaaS</span>
+          <article class="project-card project-card--visual" id="grow">
+            <div class="project-visual">
+              <div class="grow-gallery" role="group" aria-label="Grow のプロダクト画面">
+                <figure class="shot-frame shot-frame--hero">
+                  <img src="/portfolio/assets/projects/grow/hero-lesson.jpg" alt="Grow のオンライン授業画面。子供が教える体験のレッスン UI" loading="lazy" width="1200" height="750" />
+                </figure>
+                <figure class="shot-frame">
+                  <img src="/portfolio/assets/projects/grow/lesson-flow.jpg" alt="Grow のレッスンフロー画面。授業の進行と操作 UI" loading="lazy" width="1200" height="750" />
+                </figure>
+              </div>
             </div>
-            <h3 class="project-title">Grow</h3>
-            <p class="project-repo">リポ名: <code>grow</code></p>
-            <p class="project-summary">
-              小学生が「教える」体験を通して自己肯定感と説明力を育てるオンラインサービス。
-              保護者が契約主体、子供はサブプロフィール。
-            </p>
-            <ul class="project-points">
-              <li>保護者・子供・大人（先生役）・運営の多ロール認可設計</li>
-              <li>子供は PIN + 署名付き JWT（Supabase Auth を持たない）など認可の作り分け</li>
-              <li>LiveKit 授業 + 録画 Egress + AI ハイライト生成</li>
-              <li>Stripe サブスク（webhook 冪等化）と録画90日パージ等の運用設計</li>
-            </ul>
-            <div class="project-stack" aria-label="技術スタック">
-              <span>Next.js 16</span>
-              <span>Supabase</span>
-              <span>Stripe</span>
-              <span>LiveKit</span>
-              <span>OpenAI</span>
-              <span>Vercel Cron</span>
+            <div class="project-body">
+              <div class="project-card-top">
+                <span class="project-badge project-badge-web">Web プロダクト</span>
+                <span class="project-kind">Full-stack · SaaS</span>
+              </div>
+              <h3 class="project-title">Grow</h3>
+              <p class="project-repo">リポ名: <code>grow</code></p>
+              <p class="project-summary">
+                小学生が「教える」体験を通して自己肯定感と説明力を育てるオンラインサービス。
+                保護者が契約主体、子供はサブプロフィール。
+              </p>
+              <ul class="project-points">
+                <li>保護者・子供・大人（先生役）・運営の多ロール認可</li>
+                <li>子供は PIN + 署名付き JWT（Supabase Auth を持たない）</li>
+                <li>LiveKit 授業 + 録画 Egress + AI ハイライト</li>
+                <li>Stripe サブスク（webhook 冪等化）と録画パージ運用</li>
+              </ul>
+              <div class="project-stack" aria-label="技術スタック">
+                <span>Next.js</span>
+                <span>Supabase</span>
+                <span>Stripe</span>
+                <span>LiveKit</span>
+                <span>OpenAI</span>
+                <span>Vercel Cron</span>
+              </div>
+              <div class="project-links">
+                <a class="btn btn-ghost btn-sm" href="https://github.com/hiroshi0918/grow" target="_blank" rel="noopener noreferrer">GitHub <span class="muted">(Private)</span></a>
+              </div>
             </div>
-            <div class="project-links">
-              <a class="btn btn-ghost btn-sm" href="https://github.com/hiroshi0918/grow" target="_blank" rel="noopener noreferrer">GitHub <span class="muted">(Private)</span></a>
-            </div>
-            <p class="project-lead-note">
-              <strong>リード向け:</strong> 画面だけでなく認可・課金・非同期処理・データ保持まで設計。マネージドサービスを組み合わせた現代的な構成です。
-            </p>
           </article>
         </div>
 
-        <!-- Optional small project -->
         <aside class="optional-project" aria-labelledby="optional-title">
           <h3 id="optional-title" class="optional-title">補足</h3>
           <div class="optional-card">
@@ -205,11 +255,20 @@
         </header>
         <div class="skills-grid">
           <div class="skill-group">
+            <h3>データ基盤</h3>
+            <ul>
+              <li>Snowflake / dbt</li>
+              <li>AWS / Terraform</li>
+              <li>Redshift / TROCCO</li>
+              <li>SQL / Python</li>
+            </ul>
+          </div>
+          <div class="skill-group">
             <h3>言語</h3>
             <ul>
               <li>TypeScript</li>
               <li>Python</li>
-              <li>Ruby（学習/個人開発）</li>
+              <li>Ruby（TECH CAMP）</li>
               <li>SQL</li>
             </ul>
           </div>
@@ -217,74 +276,99 @@
             <h3>アプリ</h3>
             <ul>
               <li>React Native / Expo</li>
-              <li>Next.js</li>
-              <li>React</li>
+              <li>Next.js / React</li>
+              <li>Firebase / Supabase</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>バックエンド / BaaS</h3>
+            <h3>AI / プロダクト</h3>
             <ul>
-              <li>Firebase</li>
-              <li>Supabase</li>
-              <li>Cloud Functions</li>
-              <li>REST API</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>データ / AI</h3>
-            <ul>
+              <li>Dify RAG</li>
               <li>OpenAI / Anthropic</li>
-              <li>Whisper</li>
-              <li>分析パイプライン</li>
+              <li>BtoB PM · アジャイル</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>インフラ / 運用</h3>
+            <h3>その他</h3>
             <ul>
-              <li>Vercel</li>
+              <li>メンター / TL</li>
+              <li>面接官</li>
               <li>Stripe / LiveKit</li>
-              <li>GitHub</li>
-              <li>環境分離 · App Store 提出</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Career placeholders -->
+    <!-- Career timeline -->
     <section class="section" id="career" aria-labelledby="career-title">
       <div class="container">
         <header class="section-head">
           <p class="section-label">Career</p>
           <h2 id="career-title">経歴</h2>
-          <p class="section-desc">期間・所属・業務内容は追記予定です。</p>
+          <p class="section-desc">学歴・職歴のタイムラインです。</p>
         </header>
-        <div class="career-table-wrap" role="region" aria-label="経歴一覧" tabindex="0">
-          <table class="career-table">
-            <thead>
-              <tr>
-                <th scope="col">期間</th>
-                <th scope="col">所属 / 役割</th>
-                <th scope="col">業務内容</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="placeholder">（期間を記入）</span></td>
-                <td><span class="placeholder">（所属 / 役割を記入）</span></td>
-                <td><span class="placeholder">Data Engineer として…</span></td>
-              </tr>
-              <tr>
-                <td><span class="placeholder">（期間を記入）</span></td>
-                <td>個人開発</td>
-                <td>ココロパレット公開、Grow 開発 など</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="career-todo" role="note">
-          TODO: 上表のプレースホルダに実際の期間・所属・業務を記入してください。架空の勤務先や日付は入れないでください。
-        </p>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <p class="timeline-period">2024-06 — 現在</p>
+              <h3 class="timeline-role">データエンジニア</h3>
+              <p class="timeline-org">株式会社FLINTERS BASE（大手化粧品会社派遣）</p>
+              <ul class="timeline-bullets">
+                <li>Snowflake / dbt / AWS / Terraform によるデータ基盤</li>
+                <li>Dify RAG（約6000件ドキュメント）</li>
+                <li>MA連携 Redshift / TROCCO（約4500万ユーザー規模をサポート）</li>
+                <li>メンター、チームリーダー、面接官（〜30名）</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-item timeline-item--highlight">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <p class="timeline-period">2020-08 — 2024-05 <span class="timeline-tag">前職 · 再参画の接点</span></p>
+              <h3 class="timeline-role">プロダクトマネージャー</h3>
+              <p class="timeline-org">ビジネスコーチ株式会社 — BtoB コーチングアプリ</p>
+              <ul class="timeline-bullets">
+                <li>BtoB アプリの PM（ベンダー調整・要件定義・受け入れテスト）</li>
+                <li>プロダクト方向転換の推進</li>
+                <li>アジャイル開発への移行</li>
+                <li>ドメイン・ユーザー文脈を把握したうえで、いまは実装側の貢献を目指しています</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <p class="timeline-period">〜2020</p>
+              <h3 class="timeline-role">プログラミングスクール</h3>
+              <p class="timeline-org">TECH EXPERT（TECH CAMP）— Ruby</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <p class="timeline-period">2018 — 約1.5年</p>
+              <h3 class="timeline-role">リテール営業</h3>
+              <p class="timeline-org">SMBC日興証券</p>
+              <ul class="timeline-bullets">
+                <li>資産導入 1.6億円（達成率160%）、新規50件</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-item timeline-item--edu">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <p class="timeline-period">Education</p>
+              <h3 class="timeline-role">学歴</h3>
+              <ul class="timeline-bullets">
+                <li>高輪高等学校 → NZ Onslow College</li>
+                <li>明治大学 政治経済学部 経済学科 卒業</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -299,17 +383,18 @@
           Private リポジトリ（<code>cocolog</code> / <code>grow</code>）の閲覧は、GitHub Collaborator 招待または期間限定公開で対応できます。
         </p>
         <div class="contact-actions">
-          <a class="btn btn-primary" href="https://github.com/hiroshi0918" target="_blank" rel="noopener noreferrer">GitHub プロフィール</a>
-          <a class="btn btn-ghost" href="https://apps.apple.com/jp/app/6760936737" target="_blank" rel="noopener noreferrer">ココロパレットを体験</a>
+          <a class="btn btn-primary" href="mailto:terahiro0918@gmail.com">メール</a>
+          <a class="btn btn-ghost" href="https://github.com/hiroshi0918" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn-ghost" href="https://apps.apple.com/jp/app/6760936737" target="_blank" rel="noopener noreferrer">ココロパレット</a>
         </div>
-        <p class="contact-note">メール・電話は必要に応じて追記してください。</p>
+        <p class="contact-note">Email: <a href="mailto:terahiro0918@gmail.com">terahiro0918@gmail.com</a></p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> 寺島 宏 / Hiroshi Terashima</p>
+      <p>© <span id="year"></span> 寺嶋 裕 / Hiroshi Terashima</p>
       <a href="#top" class="back-top">ページ上部へ</a>
     </div>
   </footer>
