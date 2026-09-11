@@ -28,7 +28,7 @@
   }
 
   // Highlight current section in nav
-  const sections = ["about", "projects", "skills", "career", "contact"]
+  const sections = ["about", "projects", "skills", "talks", "career", "contact"]
     .map((id) => document.getElementById(id))
     .filter(Boolean);
   const navLinks = Array.from(document.querySelectorAll('.nav-list a[href^="#"]'));

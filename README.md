@@ -47,9 +47,11 @@ python3 -m http.server 8080
 ├── .nojekyll
 ├── assets/
 │   ├── brand/monogram.svg
-│   └── projects/
-│       ├── cocolog/   # App Store スクリーンショット
-│       └── grow/      # プロダクト画面 + architecture.svg
+│   ├── projects/
+│   │   ├── cocolog/   # App Store スクリーンショット
+│   │   └── grow/      # プロダクト画面 + architecture.svg
+│   └── talks/
+│       └── edinet-lt/ # meetup #9 LT スライド + pptx
 ├── .github/
 │   └── workflows/
 │       └── pages.yml
@@ -59,6 +61,8 @@ python3 -m http.server 8080
 ## 作品の比重
 
 **ココロパレット（cocolog）** と **Grow** は同等の比重（並びのカード）で掲載しています。補足として `edinet_data_pipeline` のみ小さめに記載。`movies_rank` / `MemoApp` は未掲載。
+
+**Talks**: データラーニングギルド meetup #9「データ分析×失敗談」での LT（EDINET 人的資本データ）を `#talks` に掲載。
 
 ## 連絡
 
