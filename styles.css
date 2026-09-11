@@ -1546,7 +1546,16 @@ a:hover {
 }
 
 .timeline--compact .timeline-org {
-  margin-bottom: 0;
+  margin-bottom: 0.55rem;
+}
+
+.timeline--compact .timeline-bullets {
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.timeline--compact .timeline-bullets li {
+  margin-bottom: 0.28rem;
 }
 
 .timeline--compact .timeline-role {
