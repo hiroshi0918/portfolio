@@ -60,7 +60,7 @@ python3 -m http.server 8080
 
 ## 作品の比重
 
-**ココロパレット（cocolog）** と **Grow** は同等の比重（並びのカード）で掲載しています。補足として `edinet_data_pipeline` のみ小さめに記載。`movies_rank` / `MemoApp` は未掲載。
+**ココロパレット（cocolog）** と **Grow** を同じ比重で並べて掲載しています。補足として `edinet_data_pipeline`（公開）のみ小さめに記載。`movies_rank` / `MemoApp` は未掲載。
 
 **Talks**: データラーニングギルド meetup #9「データ分析×失敗談」での LT（EDINET 人的資本データ）を `#talks` に掲載。
 

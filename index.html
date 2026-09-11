@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="寺嶋 裕（Hiroshi Terashima）— ビジネスコーチ元 PdM。ココロパレットと Grow でアプリ実装力を示すポートフォリオ。" />
+  <meta name="description" content="寺嶋 裕（Hiroshi Terashima）— App Engineer / 元 PdM。ココロパレットと Grow でアプリ実装力を示すポートフォリオ。" />
   <meta name="theme-color" content="#faf6f1" />
   <title>寺嶋 裕 — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,24 +43,38 @@
       <div class="container hero-inner">
         <div class="hero-layout">
           <div class="hero-copy">
-            <p class="hero-eyebrow">元 PdM として、実装の手触りもお見せします</p>
+            <p class="hero-eyebrow">App Engineer · 元 PdM</p>
             <h1 id="hero-title" class="hero-title">
               <span class="hero-name-ja">寺嶋 裕</span>
               <span class="hero-name-en">Hiroshi Terashima</span>
             </h1>
             <p class="hero-lead">
-              ビジネスコーチで BtoB コーチングアプリの PdM を務めたあと、いまはデータエンジニアとして実装に向き合っています。
-              再リリースされたプロダクトの <strong>エンジニアリング側</strong> に加わるにあたり、
-              ドメイン理解に加え、企画〜実装〜公開まで一人で通した <strong>ココロパレット</strong> と <strong>Grow</strong> で実装力を見てほしいです。
+              ビジネスコーチでは PdM として BtoB コーチングアプリに関わっていました。
+              再リリース後の開発に誘ってもらっているので、こちらではその後に自分で出荷・設計したアプリ実装を見てもらえると助かります。
+              個人開発として企画〜公開まで担当した <strong>ココロパレット</strong> と <strong>Grow</strong> を中心に置いています（チーム開発の一部ではありません）。
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#projects">作品を見る</a>
               <a class="btn btn-ghost" href="https://github.com/hiroshi0918" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
-            <ul class="hero-chips" aria-label="注目ポイント">
-              <li>ビジネスコーチ元 PdM</li>
-              <li>iOS 公開済みアプリ</li>
-              <li>認可・課金・リアルタイム設計</li>
+            <ul class="hero-chips" aria-label="役割">
+              <li>App Engineer</li>
+              <li>データエンジニア（現職）</li>
+              <li>元 PdM（ビジネスコーチ）</li>
+            </ul>
+            <ul class="proof-row" aria-label="証明">
+              <li>
+                <span class="proof-label">証明</span>
+                <span class="proof-text">App Store 公開</span>
+              </li>
+              <li>
+                <span class="proof-label">証明</span>
+                <span class="proof-text">Grow の認可・課金・LiveKit</span>
+              </li>
+              <li>
+                <span class="proof-label">証明</span>
+                <span class="proof-text">元 PdM としてドメイン共有済み</span>
+              </li>
             </ul>
           </div>
           <div class="hero-photo">
@@ -92,8 +106,8 @@
               要件・ベンダー・受け入れ・方向転換・アジャイル移行に関わっていました。ドメインとプロダクトの文脈はすでに共有しています。
             </p>
             <p>
-              いまお伝えしたいのは、その後に積み上げた <strong>ハンズオンの実装力</strong> です。
-              ココロパレット（App Store 公開）と Grow（認可・課金・LiveKit 授業）を同等の比重で置き、設計から出荷までの判断を示します。
+              いまお伝えしたいのは、その後に自分で積み上げた <strong>アプリ実装力</strong> です。
+              ココロパレット（App Store 公開）と Grow（認可・課金・LiveKit 授業）を並んで置き、設計から出荷までの判断を見てもらえるようにしています。
             </p>
             <p class="about-note">
               現職はデータエンジニア（大手化粧品会社向け派遣）。データ基盤・RAG・大規模連携の実務経験もありますが、本ページではアプリ実装の力を中心にお伝えします。
@@ -111,7 +125,7 @@
               </div>
               <div>
                 <dt>Role</dt>
-                <dd>Data Engineer · App Engineer</dd>
+                <dd>App Engineer · Data Engineer · 元 PdM</dd>
               </div>
               <div>
                 <dt>GitHub</dt>
@@ -145,7 +159,7 @@
         <header class="section-head">
           <p class="section-label">Works</p>
           <h2 id="projects-title">主な作品</h2>
-          <p class="section-desc">ココロパレットと Grow は同等の比重でご覧ください。</p>
+          <p class="section-desc">ココロパレットと Grow を同じ比重で並べています。どちらも個人開発として企画〜公開まで担当しました。</p>
         </header>
 
         <div class="project-grid">
@@ -184,6 +198,10 @@
                 <li>AI オプトイン設計（同意なしでもコア機能は利用可）</li>
                 <li>環境分離から App Store 提出までの一連</li>
               </ul>
+              <div class="design-callout">
+                <p class="design-callout-label">設計で工夫したこと</p>
+                <p class="design-callout-text">AI はオプトイン。同意なしでも感情記録・振り返りなどコア機能は使えるようにし、プライバシーを優先しました。</p>
+              </div>
               <div class="project-stack" aria-label="技術スタック">
                 <span>React Native (Expo)</span>
                 <span>TypeScript</span>
@@ -193,8 +211,9 @@
               </div>
               <div class="project-links">
                 <a class="btn btn-primary btn-sm" href="https://apps.apple.com/jp/app/6760936737" target="_blank" rel="noopener noreferrer">App Store</a>
-                <a class="btn btn-ghost btn-sm" href="https://github.com/hiroshi0918/cocolog" target="_blank" rel="noopener noreferrer">GitHub <span class="muted">(Private)</span></a>
+                <a class="btn btn-ghost btn-sm" href="mailto:terahiro0918@gmail.com?subject=cocolog%20GitHub%20Collaborator%E6%8B%9B%E5%BE%85%E3%81%AE%E4%BE%9D%E9%A0%BC">Private リポの閲覧を依頼</a>
               </div>
+              <p class="project-private-note">GitHub は Private です。Collaborator 招待や設計ドキュメントの共有もできます。</p>
             </div>
           </article>
 
@@ -205,9 +224,15 @@
                 <figure class="shot-frame shot-frame--hero">
                   <img src="/portfolio/assets/projects/grow/hero-lesson.jpg" alt="Grow のオンライン授業画面。子供が教える体験のレッスン UI" loading="lazy" width="1200" height="750" />
                 </figure>
-                <figure class="shot-frame">
-                  <img src="/portfolio/assets/projects/grow/lesson-flow.jpg" alt="Grow のレッスンフロー画面。授業の進行と操作 UI" loading="lazy" width="1200" height="750" />
-                </figure>
+                <div class="grow-gallery-stack">
+                  <figure class="shot-frame">
+                    <img src="/portfolio/assets/projects/grow/lesson-flow.jpg" alt="Grow のレッスンフロー画面。授業の進行と操作 UI" loading="lazy" width="1200" height="750" />
+                  </figure>
+                  <figure class="shot-frame shot-frame--diagram">
+                    <img src="/portfolio/assets/projects/grow/architecture.svg" alt="Grow のシステム設計図" loading="lazy" width="800" height="600" />
+                    <figcaption>設計図</figcaption>
+                  </figure>
+                </div>
               </div>
             </div>
             <div class="project-body">
@@ -219,7 +244,7 @@
               <p class="project-repo">リポ名: <code>grow</code></p>
               <p class="project-summary">
                 小学生が「教える」体験を通して自己肯定感と説明力を育てるオンラインサービス。
-                保護者が契約主体、子供はサブプロフィール。
+                保護者が契約主体、子供はサブプロフィール。個人開発として企画〜実装まで担当。
               </p>
               <ul class="project-points">
                 <li>保護者・子供・大人（先生役）・運営の多ロール認可</li>
@@ -227,6 +252,10 @@
                 <li>LiveKit 授業 + 録画 Egress + AI ハイライト</li>
                 <li>Stripe サブスク（webhook 冪等化）と録画パージ運用</li>
               </ul>
+              <div class="design-callout">
+                <p class="design-callout-label">設計で工夫したこと</p>
+                <p class="design-callout-text">子供は PIN + 署名付き JWT でログインし、Supabase Auth アカウントを持たせない。Stripe webhook は冪等化して課金の二重処理を防いでいます。</p>
+              </div>
               <div class="project-stack" aria-label="技術スタック">
                 <span>Next.js</span>
                 <span>Supabase</span>
@@ -236,8 +265,10 @@
                 <span>Vercel Cron</span>
               </div>
               <div class="project-links">
-                <a class="btn btn-ghost btn-sm" href="https://github.com/hiroshi0918/grow" target="_blank" rel="noopener noreferrer">GitHub <span class="muted">(Private)</span></a>
+                <a class="btn btn-ghost btn-sm" href="mailto:terahiro0918@gmail.com?subject=Grow%20GitHub%20Collaborator%E6%8B%9B%E5%BE%85%E3%81%AE%E4%BE%9D%E9%A0%BC">Private リポの閲覧を依頼</a>
+                <span class="demo-note">デモは個別共有可</span>
               </div>
+              <p class="project-private-note">GitHub は Private です。Collaborator 招待や設計ドキュメントの共有もできます。</p>
             </div>
           </article>
         </div>
@@ -246,10 +277,10 @@
           <h3 id="optional-title" class="optional-title">補足</h3>
           <div class="optional-card">
             <div>
-              <h4>edinet_data_pipeline</h4>
-              <p>EDINET 人的資本×財務の分析基盤。Data Engineer としての深さの参考に。</p>
+              <h4>edinet_data_pipeline <span class="optional-public">Public</span></h4>
+              <p>EDINET 人的資本×財務の分析基盤。Data Engineer としての深さの参考に。公開リポジトリです。</p>
             </div>
-            <a class="btn btn-ghost btn-sm" href="https://github.com/hiroshi0918/edinet_data_pipeline" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/hiroshi0918/edinet_data_pipeline" target="_blank" rel="noopener noreferrer">GitHub（公開）</a>
           </div>
         </aside>
       </div>
@@ -446,10 +477,12 @@
           <h2 id="contact-title">連絡</h2>
         </header>
         <p class="contact-lead">
-          Private リポジトリ（<code>cocolog</code> / <code>grow</code>）の閲覧が必要なときは、GitHub Collaborator 招待または期間限定公開で対応できます。お気軽にご連絡ください。
+          <code>cocolog</code> / <code>grow</code> は Private です。コードレビューや採用検討のために <strong>GitHub Collaborator 招待</strong>、期間限定公開、設計ドキュメントの共有ができます。公開リポの参考は
+          <a href="https://github.com/hiroshi0918/edinet_data_pipeline" target="_blank" rel="noopener noreferrer">edinet_data_pipeline</a> をご覧ください。メールで気軽にどうぞ。
         </p>
         <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:terahiro0918@gmail.com">メール</a>
+          <a class="btn btn-primary" href="mailto:terahiro0918@gmail.com?subject=Portfolio%20%E2%80%94%20Collaborator%E6%8B%9B%E5%BE%85%E3%81%AE%E4%BE%9D%E9%A0%BC">Collaborator 招待を依頼</a>
+          <a class="btn btn-ghost" href="mailto:terahiro0918@gmail.com">メール</a>
           <a class="btn btn-ghost" href="https://github.com/hiroshi0918" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a class="btn btn-ghost" href="https://apps.apple.com/jp/app/6760936737" target="_blank" rel="noopener noreferrer">ココロパレット</a>
         </div>
