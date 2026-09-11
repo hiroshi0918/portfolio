@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="寺">
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7c9cff"/>
-      <stop offset="100%" stop-color="#3dd6c6"/>
+      <stop offset="0%" stop-color="#e8886a"/>
+      <stop offset="100%" stop-color="#6b9a85"/>
     </linearGradient>
   </defs>
-  <rect width="96" height="96" rx="24" fill="#141b2d"/>
-  <rect x="2" y="2" width="92" height="92" rx="22" fill="none" stroke="url(#g)" stroke-width="2" opacity="0.85"/>
-  <text x="48" y="64" text-anchor="middle" font-family="Noto Sans JP, Hiragino Sans, sans-serif" font-size="44" font-weight="700" fill="#e8eef8">寺</text>
+  <rect width="96" height="96" rx="28" fill="#fff8f2"/>
+  <rect x="2" y="2" width="92" height="92" rx="26" fill="none" stroke="url(#g)" stroke-width="2" opacity="0.9"/>
+  <text x="48" y="64" text-anchor="middle" font-family="Noto Sans JP, Hiragino Sans, sans-serif" font-size="44" font-weight="700" fill="#2f2a26">寺</text>
 </svg>
