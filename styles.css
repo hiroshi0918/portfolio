@@ -1578,3 +1578,56 @@ a:hover {
     aspect-ratio: 16 / 10;
   }
 }
+
+
+.hero-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.55rem 0.85rem;
+}
+.hero-age {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+.hero-age::after {
+  content: "";
+}
+
+
+/* Clear external/store links — not pill tags */
+.btn-store {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 2.75rem;
+  padding: 0.65rem 1.15rem;
+  border-radius: 12px;
+  border: 1.5px solid var(--text);
+  background: var(--text);
+  color: #fffdf9;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(47, 42, 38, 0.12);
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.btn-store:hover {
+  transform: translateY(-1px);
+  background: transparent;
+  color: var(--text);
+}
+.btn-store--grow {
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 8px 18px rgba(224, 122, 95, 0.22);
+}
+.btn-store--grow:hover {
+  background: transparent;
+  color: var(--accent-strong);
+  border-color: var(--accent-strong);
+}
