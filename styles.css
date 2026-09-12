@@ -1485,7 +1485,8 @@ a:hover {
 }
 
 .about-card--solo {
-  max-width: 40rem;
+  max-width: none;
+  width: 100%;
 }
 
 .about-card--solo p:last-of-type {
