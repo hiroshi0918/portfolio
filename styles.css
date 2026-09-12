@@ -3493,3 +3493,8 @@ a:hover {
   align-self: center !important;
   margin-top: 0 !important;
 }
+
+/* Section heads +4px */
+.section-head h2 {
+  font-size: clamp(calc(1.65rem + 4px), calc(3.2vw + 4px), calc(2.1rem + 4px)) !important;
+}
