@@ -2246,3 +2246,532 @@ p,
   line-height: 1.75;
   letter-spacing: 0.02em;
 }
+
+
+/* =========================================================
+   Interaction states — button / form / card
+   Default · Hover · Active · Focus · Disabled · Loading · Error
+   ========================================================= */
+
+:root {
+  --state-focus: 0 0 0 3px rgba(61, 111, 159, 0.45);
+  --state-focus-error: 0 0 0 3px rgba(180, 60, 60, 0.4);
+  --state-error: #b83a3a;
+  --state-error-bg: #fdecec;
+  --state-error-border: #e2a0a0;
+  --state-disabled-opacity: 0.48;
+  --control-radius: 6px;
+  --control-transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease, transform 0.12s ease;
+}
+
+@keyframes ui-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* —— Shared focus —— */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  box-shadow: var(--state-focus);
+  outline: 2px solid transparent;
+}
+
+/* —— Buttons (operable) —— */
+.btn,
+.btn-store,
+.btn-store--grow,
+.nav-toggle,
+.back-top,
+button:not([disabled]) {
+  cursor: pointer;
+  transition: var(--control-transition);
+}
+
+.btn,
+.btn-store,
+.btn-store--grow {
+  position: relative;
+  border-radius: var(--control-radius);
+  text-decoration: none;
+  user-select: none;
+}
+
+/* Default already set by component rules — reinforce affordance */
+.btn-store,
+.btn-store--grow {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+
+.btn:hover,
+.btn-store:hover,
+.btn-store--grow:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(30, 50, 80, 0.14);
+}
+
+.btn-store--grow:hover {
+  background: #355f8a;
+  border-color: #355f8a;
+  color: #fff;
+}
+
+.btn-store--grow:hover .link-icon {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+
+.btn:active,
+.btn-store:active,
+.btn-store--grow:active,
+.nav-toggle:active,
+.back-top:active {
+  transform: translateY(1px);
+  filter: brightness(0.94);
+  box-shadow: none;
+}
+
+.btn:focus-visible,
+.btn-store:focus-visible,
+.btn-store--grow:focus-visible,
+.nav-toggle:focus-visible,
+.back-top:focus-visible {
+  box-shadow: var(--state-focus);
+  outline: 2px solid transparent;
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"],
+.btn.is-disabled,
+.btn-store:disabled,
+.btn-store[aria-disabled="true"],
+.btn-store.is-disabled,
+.btn-store--grow:disabled,
+.btn-store--grow[aria-disabled="true"],
+.btn-store--grow.is-disabled,
+.nav-toggle:disabled,
+.back-top.is-disabled {
+  cursor: not-allowed;
+  opacity: var(--state-disabled-opacity);
+  filter: grayscale(0.2);
+  transform: none;
+  pointer-events: none;
+  box-shadow: none;
+}
+
+.btn.is-loading,
+.btn[aria-busy="true"],
+.btn-store.is-loading,
+.btn-store[aria-busy="true"],
+.btn-store--grow.is-loading,
+.btn-store--grow[aria-busy="true"] {
+  cursor: wait;
+  pointer-events: none;
+  opacity: 0.78;
+  color: transparent !important;
+}
+
+.btn.is-loading > *,
+.btn[aria-busy="true"] > *,
+.btn-store.is-loading > *,
+.btn-store[aria-busy="true"] > *,
+.btn-store--grow.is-loading > *,
+.btn-store--grow[aria-busy="true"] > * {
+  visibility: hidden;
+}
+
+.btn.is-loading::after,
+.btn[aria-busy="true"]::after,
+.btn-store.is-loading::after,
+.btn-store[aria-busy="true"]::after,
+.btn-store--grow.is-loading::after,
+.btn-store--grow[aria-busy="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: ui-spin 0.7s linear infinite;
+}
+
+.btn.is-error,
+.btn-store.is-error,
+.btn-store--grow.is-error {
+  background: var(--state-error);
+  border-color: var(--state-error);
+  color: #fff;
+  box-shadow: none;
+}
+
+.btn.is-error:hover,
+.btn-store.is-error:hover,
+.btn-store--grow.is-error:hover {
+  background: #9e2f2f;
+  border-color: #9e2f2f;
+  color: #fff;
+}
+
+.btn.is-error:focus-visible,
+.btn-store.is-error:focus-visible,
+.btn-store--grow.is-error:focus-visible {
+  box-shadow: var(--state-focus-error);
+}
+
+/* Text / icon links — clearly operable */
+a.hero-text-link,
+a.contact-icon-link,
+.contact-note a,
+.nav-list a,
+.back-top {
+  cursor: pointer;
+  transition: var(--control-transition);
+}
+
+a.hero-text-link:hover,
+a.contact-icon-link:hover,
+.contact-note a:hover {
+  color: #1e4a73;
+  text-decoration-thickness: 2px;
+}
+
+a.hero-text-link:active,
+a.contact-icon-link:active {
+  opacity: 0.75;
+}
+
+a.hero-text-link:focus-visible,
+a.contact-icon-link:focus-visible,
+.nav-list a:focus-visible,
+.back-top:focus-visible {
+  box-shadow: var(--state-focus);
+  border-radius: 4px;
+}
+
+a.hero-text-link[aria-disabled="true"],
+a.contact-icon-link[aria-disabled="true"],
+a.is-disabled {
+  cursor: not-allowed;
+  opacity: var(--state-disabled-opacity);
+  pointer-events: none;
+  text-decoration: none;
+}
+
+a.hero-text-link.is-loading,
+a.contact-icon-link.is-loading,
+a[aria-busy="true"].hero-text-link {
+  cursor: wait;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+a.hero-text-link.is-error,
+a.contact-icon-link.is-error {
+  color: var(--state-error);
+}
+
+/* —— Forms —— */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+
+.form-hint {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.form-error-text {
+  font-size: 0.82rem;
+  color: var(--state-error);
+  line-height: 1.5;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+textarea,
+select,
+.form-control {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 2.75rem;
+  padding: 0.65rem 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  background: #fff;
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--control-radius);
+  box-shadow: none;
+  transition: var(--control-transition);
+  appearance: none;
+}
+
+textarea,
+.form-control--textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+/* Default: white field, clear border = editable */
+input::placeholder,
+textarea::placeholder {
+  color: #8a94a3;
+  opacity: 1;
+}
+
+input:hover,
+textarea:hover,
+select:hover,
+.form-control:hover {
+  border-color: var(--accent);
+  background: #fafcfe;
+}
+
+input:active,
+textarea:active,
+select:active,
+.form-control:active {
+  border-color: var(--accent-strong);
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+.form-control:focus,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+.form-control:focus-visible {
+  border-color: var(--accent-strong);
+  background: #fff;
+  box-shadow: var(--state-focus);
+  outline: none;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled,
+.form-control:disabled,
+input[aria-disabled="true"],
+.form-control.is-disabled {
+  cursor: not-allowed;
+  opacity: var(--state-disabled-opacity);
+  background: #e8edf3;
+  border-color: var(--border);
+  color: var(--text-muted);
+}
+
+input.is-loading,
+textarea.is-loading,
+.form-control.is-loading,
+input[aria-busy="true"] {
+  cursor: wait;
+  background-image: linear-gradient(90deg, #f0f4f8 25%, #e2e8f0 50%, #f0f4f8 75%);
+  background-size: 200% 100%;
+  animation: ui-shimmer 1.1s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes ui-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+input.is-error,
+textarea.is-error,
+select.is-error,
+.form-control.is-error,
+input[aria-invalid="true"],
+textarea[aria-invalid="true"],
+select[aria-invalid="true"] {
+  border-color: var(--state-error);
+  background: var(--state-error-bg);
+  color: var(--text);
+}
+
+input.is-error:focus,
+textarea.is-error:focus,
+select.is-error:focus,
+.form-control.is-error:focus,
+input[aria-invalid="true"]:focus {
+  box-shadow: var(--state-focus-error);
+  border-color: var(--state-error);
+}
+
+.form-field.is-error .form-label {
+  color: var(--state-error);
+}
+
+/* —— Cards —— */
+.ui-card,
+.project-card,
+.about-card,
+.contact-card,
+.timeline-card,
+.talk-card {
+  transition: var(--control-transition);
+}
+
+/* Default: non-interactive cards stay static cursor */
+.project-card,
+.about-card,
+.contact-card,
+.timeline-card,
+.talk-card,
+.ui-card {
+  cursor: default;
+}
+
+/* Interactive card (link-wrapped or explicitly actionable) */
+a.ui-card,
+.ui-card--interactive,
+.project-card.ui-card--interactive,
+.card--action {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+a.ui-card:hover,
+.ui-card--interactive:hover,
+.project-card.ui-card--interactive:hover,
+.card--action:hover {
+  border-color: var(--accent);
+  box-shadow: 0 10px 28px rgba(30, 50, 80, 0.12);
+  transform: translateY(-2px);
+}
+
+a.ui-card:active,
+.ui-card--interactive:active,
+.card--action:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(30, 50, 80, 0.08);
+  border-color: var(--accent-strong);
+}
+
+a.ui-card:focus-visible,
+.ui-card--interactive:focus-visible,
+.card--action:focus-visible {
+  box-shadow: var(--state-focus);
+  border-color: var(--accent-strong);
+  outline: none;
+}
+
+.ui-card.is-disabled,
+.ui-card[aria-disabled="true"],
+.project-card.is-disabled,
+.card--action.is-disabled {
+  cursor: not-allowed;
+  opacity: var(--state-disabled-opacity);
+  filter: grayscale(0.15);
+  pointer-events: none;
+  transform: none;
+  box-shadow: none;
+}
+
+.ui-card.is-loading,
+.ui-card[aria-busy="true"],
+.project-card.is-loading,
+.card--action.is-loading {
+  cursor: wait;
+  pointer-events: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.ui-card.is-loading::before,
+.ui-card[aria-busy="true"]::before,
+.project-card.is-loading::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(238, 242, 247, 0.55);
+  z-index: 1;
+}
+
+.ui-card.is-loading::after,
+.ui-card[aria-busy="true"]::after,
+.project-card.is-loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: -0.75rem 0 0 -0.75rem;
+  border: 2px solid rgba(61, 111, 159, 0.25);
+  border-top-color: var(--accent-strong);
+  border-radius: 50%;
+  animation: ui-spin 0.7s linear infinite;
+  z-index: 2;
+}
+
+.ui-card.is-error,
+.project-card.is-error,
+.about-card.is-error,
+.contact-card.is-error,
+.card--action.is-error {
+  border-color: var(--state-error-border);
+  box-shadow: 0 0 0 1px var(--state-error-border);
+  background: #fff8f8;
+}
+
+/* Subtle non-interactive hover (does not imply click) */
+.project-card:not(.ui-card--interactive):not(.is-disabled):hover,
+.about-card:not(.ui-card--interactive):not(.is-disabled):hover,
+.timeline-card:not(.ui-card--interactive):not(.is-disabled):hover,
+.contact-card:not(.ui-card--interactive):not(.is-disabled):hover {
+  border-color: rgba(47, 95, 143, 0.28);
+  box-shadow: 0 10px 28px rgba(30, 50, 80, 0.09);
+  transform: none;
+  cursor: default;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn-store,
+  .btn-store--grow,
+  .ui-card,
+  .project-card,
+  input,
+  textarea,
+  select,
+  .form-control {
+    transition: none;
+  }
+
+  .btn.is-loading::after,
+  .btn-store.is-loading::after,
+  .btn-store[aria-busy="true"]::after,
+  .ui-card.is-loading::after,
+  .project-card.is-loading::after,
+  input.is-loading,
+  .form-control.is-loading {
+    animation: none;
+  }
+}
