@@ -3257,3 +3257,20 @@ a:hover {
 :focus-visible {
   box-shadow: 0 0 0 3px var(--sage);
 }
+
+/* Skill chip icons */
+.about-skills-chips li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem 0.4rem 0.55rem;
+}
+
+.about-skills-chips .skill-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 3px;
+}
