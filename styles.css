@@ -3498,3 +3498,10 @@ a:hover {
 .section-head h2 {
   font-size: clamp(calc(1.65rem + 4px), calc(3.2vw + 4px), calc(2.1rem + 4px)) !important;
 }
+
+/* Hero name: soft rounded gothic */
+.hero-name-ja {
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "Hiragino Sans", sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+}
