@@ -3471,3 +3471,12 @@ a:hover {
 .timeline--compact .timeline-marker {
   margin-top: 0 !important;
 }
+
+/* Contact: no card */
+.section-contact .contact-note {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
