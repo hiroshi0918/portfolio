@@ -3538,3 +3538,28 @@ a:hover {
   display: none !important;
 }
 
+/* Section heads: left vertical bar instead of underline */
+.section-head h2 {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.65rem !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+
+.section-head h2::before {
+  content: "" !important;
+  display: block !important;
+  flex: 0 0 auto !important;
+  width: 5px !important;
+  height: 0.92em !important;
+  border-radius: 1px !important;
+  background: #A8C69F !important;
+}
+
+.section-head h2::after {
+  content: none !important;
+  display: none !important;
+}
+
