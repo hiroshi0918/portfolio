@@ -1826,3 +1826,9 @@ a:hover {
 .hero-actions {
   gap: 1rem;
 }
+
+
+.project-proof--note {
+  color: #d9897a;
+  font-size: 0.9rem;
+}
