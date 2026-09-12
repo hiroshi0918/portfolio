@@ -1825,3 +1825,21 @@ a:hover {
   color: #d9897a;
   font-size: 0.9rem;
 }
+
+
+.project-heading {
+  margin-bottom: 1rem;
+}
+
+.project-heading .project-title {
+  margin-bottom: 0.35rem;
+}
+
+.project-heading .project-summary {
+  margin: 0;
+}
+
+.project-card--visual .project-visual {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
