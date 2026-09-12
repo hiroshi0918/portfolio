@@ -670,7 +670,13 @@ a:hover {
 .project-links {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   gap: 0.55rem;
+}
+
+.project-links .hero-text-link {
+  align-self: flex-end;
+  margin-left: 0;
 }
 
 /* Phone mockups — cocolog */

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/portfolio/styles.css?v=20260913c" />
+  <link rel="stylesheet" href="/portfolio/styles.css?v=20260913d" />
   <link rel="icon" href="/portfolio/assets/brand/monogram.svg" type="image/svg+xml" />
 </head>
 <body>
@@ -31,7 +31,6 @@
           <li><a href="#about">自己紹介</a></li>
           <li><a href="#career">経歴</a></li>
           <li><a href="#projects">制作物</a></li>
-          <li><a href="#talks">登壇実績</a></li>
           <li><a href="#contact">お問い合わせ</a></li>
         </ul>
       </nav>
@@ -255,45 +254,39 @@
               </div>
             </div>
           </article>
+
+          <article class="project-card project-card--visual" id="edinet-lt">
+            <div class="project-heading">
+              <h3 class="project-title">EDINET人的資本分析ダッシュボード</h3>
+            </div>
+            <div class="project-visual">
+              <div class="talk-slides talk-slides--two" role="group" aria-label="LT スライド抜粋">
+                <figure class="talk-slide">
+                  <img src="/portfolio/assets/talks/edinet-lt/slides-01.png" alt="タイトルスライド：4,300社の人的資本データ分析してみた" loading="lazy" width="960" height="540" />
+                </figure>
+                <figure class="talk-slide">
+                  <img src="/portfolio/assets/talks/edinet-lt/slides-04.png" alt="パイプライン全体像のスライド" loading="lazy" width="960" height="540" />
+                </figure>
+              </div>
+            </div>
+            
+            <div class="project-body">
+              <p class="project-why">
+                有価証券報告書の人的資本データを集めて、約4,300社分をstreamlitで閲覧・分析できるようにしました。<br />
+                分析結果や工夫などをLT登壇で話しました。
+              </p>
+              <div class="project-links">
+                <a class="btn-store btn-store--grow" href="https://edinet-dashboard.streamlit.app" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/streamlit.svg?v=2" alt="" width="16" height="16" decoding="async" /><span>Streamlit で見る</span></a>
+                <a class="hero-text-link hero-text-link--icon" href="https://note.com/harhar2106/n/nda50c05bdfdb" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/note.svg" alt="" width="16" height="16" decoding="async" /><span>イベント登壇note</span></a>
+                <a class="hero-text-link hero-text-link--icon" href="https://github.com/hiroshi0918/edinet_data_pipeline" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/github.svg" alt="" width="16" height="16" decoding="async" /><span>GitHub</span></a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-<section class="section section-talks" id="talks" aria-labelledby="talks-title">
-      <div class="container">
-        <header class="section-head">
-          <h2 id="talks-title">登壇実績</h2>
-        </header>
-
-        <article class="talk-card talk-card--slim" id="edinet-lt">
-          <div class="talk-heading">
-            <h3 class="talk-title">EDINET人的資本分析ダッシュボード</h3>
-          </div>
-          <div class="talk-visual talk-visual--slim" aria-label="スライドサムネイル">
-            <div class="talk-slides talk-slides--two" role="group" aria-label="LT スライド抜粋">
-              <figure class="talk-slide">
-                <img src="/portfolio/assets/talks/edinet-lt/slides-01.png" alt="タイトルスライド：4,300社の人的資本データ分析してみた" loading="lazy" width="960" height="540" />
-              </figure>
-              <figure class="talk-slide">
-                <img src="/portfolio/assets/talks/edinet-lt/slides-04.png" alt="パイプライン全体像のスライド" loading="lazy" width="960" height="540" />
-              </figure>
-            </div>
-          </div>
-          
-          <div class="talk-body">
-            <p class="talk-summary">
-              有価証券報告書の人的資本データを集めて、約4,300社分をstreamlitで閲覧・分析できるようにしました。<br />
-              分析結果や工夫などをLT登壇で話しました。
-            </p>
-            <div class="talk-links">
-              <a class="btn-store btn-store--grow" href="https://edinet-dashboard.streamlit.app" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/streamlit.svg?v=2" alt="" width="16" height="16" decoding="async" /><span>Streamlit で見る</span></a>
-              <a class="hero-text-link hero-text-link--icon" href="https://note.com/harhar2106/n/nda50c05bdfdb" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/note.svg" alt="" width="16" height="16" decoding="async" /><span>meetup の note</span></a>
-              <a class="hero-text-link hero-text-link--icon" href="https://github.com/hiroshi0918/edinet_data_pipeline" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/github.svg" alt="" width="16" height="16" decoding="async" /><span>GitHub</span></a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
 
 <section class="section section-contact" id="contact" aria-labelledby="contact-title">
       <div class="container">
@@ -316,6 +309,6 @@
     </div>
   </footer>
 
-  <script src="/portfolio/script.js?v=20260913a" defer></script>
+  <script src="/portfolio/script.js?v=20260913d" defer></script>
 </body>
 </html>

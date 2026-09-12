@@ -27,7 +27,7 @@
     });
   }
 
-  const sections = ["about", "projects", "talks", "career", "contact"]
+  const sections = ["about", "projects", "career", "contact"]
     .map((id) => document.getElementById(id))
     .filter(Boolean);
   const navLinks = Array.from(document.querySelectorAll('.nav-list a[href^="#"]'));
