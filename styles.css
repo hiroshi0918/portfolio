@@ -4,20 +4,20 @@
    ========================================================= */
 
 :root {
-  --bg: #d5dee9;
+  --bg: #c8d3e2;
   --bg-elevated: #ffffff;
   --bg-card: #ffffff;
   --bg-card-hover: #f5f8fc;
   --border: rgba(40, 60, 90, 0.12);
   --border-strong: rgba(40, 60, 90, 0.22);
-  --text: #1c2430;
-  --text-muted: #6b7585;
-  --text-soft: #3a4555;
-  --accent: #3d6f9f;
-  --accent-strong: #2f5f8f;
-  --accent-sage: #4f7f8f;
-  --accent-lavender: #6b86a8;
-  --accent-warm: #7aa0c4;
+  --text: #121820;
+  --text-muted: #5c6778;
+  --text-soft: #2c3644;
+  --accent: #2a5f9e;
+  --accent-strong: #1a4578;
+  --accent-sage: #3d6a7a;
+  --accent-lavender: #5a6f96;
+  --accent-warm: #6a8eb8;
   --accent-glow: rgba(61, 111, 159, 0.22);
   --sage-soft: rgba(79, 127, 143, 0.12);
   --lavender-soft: rgba(107, 134, 168, 0.12);
@@ -2774,4 +2774,161 @@ a.ui-card:focus-visible,
   .form-control.is-loading {
     animation: none;
   }
+}
+
+
+/* =========================================================
+   Tone — emotional & stylish
+   Deep cool blue, quiet drama, soft Japanese readability kept
+   ========================================================= */
+
+body {
+  background:
+    radial-gradient(1200px 520px at 12% -10%, rgba(42, 95, 158, 0.16), transparent 60%),
+    radial-gradient(900px 480px at 92% 8%, rgba(26, 69, 120, 0.12), transparent 55%),
+    var(--bg);
+  color: var(--text);
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.86);
+  border-bottom: 1px solid rgba(26, 69, 120, 0.12);
+  backdrop-filter: blur(10px) saturate(1.05);
+}
+
+.hero {
+  position: relative;
+  padding: clamp(3.5rem, 8vw, 6rem) 0 clamp(3rem, 6vw, 4.5rem);
+  border-bottom: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(26, 69, 120, 0.35), transparent);
+}
+
+.hero-name-ja {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  background: linear-gradient(180deg, #121820 0%, #1a4578 140%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .hero-name-ja {
+    color: var(--text);
+    background: none;
+  }
+}
+
+.hero-name-en {
+  color: #5c6778;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+}
+
+.hero-lead {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--text-soft);
+  max-width: 34rem;
+}
+
+.hero-photo {
+  width: min(310px, 74vw);
+  border-radius: 12px;
+  outline: none;
+  box-shadow:
+    0 18px 40px rgba(18, 40, 70, 0.18),
+    0 0 0 1px rgba(26, 69, 120, 0.16);
+}
+
+.section-head h2 {
+  letter-spacing: 0.08em;
+}
+
+.section-head h2::after {
+  height: 2px;
+  max-width: 3.25rem;
+  background: linear-gradient(90deg, var(--accent-strong), rgba(42, 95, 158, 0.15));
+}
+
+.about-card,
+.contact-card,
+.timeline-card,
+.project-card,
+.talk-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(26, 69, 120, 0.1);
+  box-shadow: 0 12px 32px rgba(18, 40, 70, 0.08);
+  border-radius: 14px;
+}
+
+.project-card:not(.ui-card--interactive):hover,
+.about-card:not(.ui-card--interactive):hover,
+.timeline-card:not(.ui-card--interactive):hover,
+.contact-card:not(.ui-card--interactive):hover {
+  border-color: rgba(26, 69, 120, 0.22);
+  box-shadow: 0 16px 36px rgba(18, 40, 70, 0.12);
+}
+
+.project-title,
+.talk-title {
+  letter-spacing: 0.05em;
+}
+
+.project-summary {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.project-why {
+  line-height: 1.85;
+}
+
+.btn-store--grow {
+  background: linear-gradient(180deg, #2f6aad 0%, #1a4578 100%);
+  border-color: #1a4578;
+  box-shadow: 0 8px 20px rgba(26, 69, 120, 0.28);
+}
+
+.btn-store--grow:hover {
+  background: linear-gradient(180deg, #355f8a 0%, #163a66 100%);
+  border-color: #163a66;
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(26, 69, 120, 0.34);
+}
+
+.btn-store--grow:hover .link-icon {
+  filter: brightness(0) invert(1);
+}
+
+.hero-text-link,
+.contact-icon-link {
+  color: #1a4578;
+}
+
+.about-skills-chips li {
+  background: rgba(42, 95, 158, 0.06);
+  border-color: rgba(26, 69, 120, 0.16);
+  color: #2c3644;
+  border-radius: 999px;
+}
+
+.site-footer {
+  border-top: 1px solid rgba(26, 69, 120, 0.12);
+  color: var(--text-muted);
+}
+
+.logo-mark {
+  box-shadow: 0 6px 16px rgba(26, 69, 120, 0.22);
 }
