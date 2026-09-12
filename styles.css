@@ -1068,10 +1068,11 @@ a:hover {
 .timeline::before {
   content: "";
   position: absolute;
-  left: 11px;
+  left: 12px;
   top: 8px;
   bottom: 8px;
   width: 2px;
+  transform: translateX(-50%);
   background: linear-gradient(180deg, var(--accent), var(--accent-sage), transparent);
   opacity: 0.45;
 }
@@ -3447,4 +3448,28 @@ a:hover {
   border: 2px solid var(--navy) !important;
   background: var(--sage) !important;
   box-shadow: 0 0 0 4px rgba(168, 198, 159, 0.45) !important;
+}
+
+
+/* Timeline markers centered on the vertical rail */
+.timeline-item {
+  grid-template-columns: 24px 1fr;
+}
+
+.timeline-marker,
+.timeline-item--edu .timeline-marker,
+.timeline-item--current .timeline-marker,
+.timeline--compact .timeline-marker {
+  justify-self: center !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* triangle: 14px wide (7+7) — keep visual width, no side margins */
+.timeline-marker {
+  margin-top: 1.1rem !important;
+}
+
+.timeline-item--current .timeline-marker {
+  margin-top: 1.05rem !important;
 }
