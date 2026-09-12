@@ -27,8 +27,8 @@
   --radius-pill: 999px;
   --shadow: 0 1px 0 rgba(20, 40, 70, 0.04);
   --shadow-soft: none;
-  --font-sans: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  --font-display: "Nunito", "Noto Sans JP", sans-serif;
+  --font-sans: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+  --font-display: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   --container: 1120px;
   --header-h: 68px;
   --focus: 0 0 0 3px rgba(61, 111, 159, 0.4);
@@ -48,8 +48,9 @@ html {
 body {
   margin: 0;
   font-family: var(--font-sans);
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 400;
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
@@ -2140,4 +2141,108 @@ body {
 
 .project-proof--note {
   color: var(--text-muted);
+}
+
+/* =========================================================
+   Japanese-first typography — readable, soft, approachable
+   ========================================================= */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+p,
+.hero-lead,
+.about-card p,
+.project-why,
+.project-summary,
+.talk-summary,
+.timeline-org,
+.timeline-bullets,
+.contact-note {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+.hero-lead {
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.hero-name-ja {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+}
+
+.hero-name-en {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: none;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.3;
+  transform: translateY(0.08em);
+}
+
+.section-head h2,
+.project-title,
+.talk-title,
+.timeline-role {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+}
+
+.section-head h2 {
+  font-size: clamp(1.65rem, 3.2vw, 2.1rem);
+  font-weight: 700;
+}
+
+.project-title,
+.talk-title {
+  font-size: clamp(1.35rem, 2.6vw, 1.65rem);
+  font-weight: 700;
+}
+
+.section-label,
+.about-skills-label,
+.about-certs-label,
+.hero-name-en {
+  font-family: var(--font-sans);
+}
+
+.nav-list a {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.btn-store,
+.btn-store--grow {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.about-skills-chips li {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.about-certs-list,
+.timeline-bullets {
+  line-height: 1.75;
+  letter-spacing: 0.02em;
 }
