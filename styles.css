@@ -4,10 +4,10 @@
    ========================================================= */
 
 :root {
-  --bg: #faf6f1;
-  --bg-elevated: #fffdf9;
+  --bg: #ffffff;
+  --bg-elevated: #ffffff;
   --bg-card: #ffffff;
-  --bg-card-hover: #fff9f4;
+  --bg-card-hover: #f7f7f7;
   --border: rgba(90, 70, 55, 0.10);
   --border-strong: rgba(90, 70, 55, 0.18);
   --text: #2f2a26;
@@ -51,11 +51,7 @@ body {
   font-size: 1rem;
   line-height: 1.8;
   color: var(--text);
-  background:
-    radial-gradient(1000px 520px at 8% -8%, rgba(224, 122, 95, 0.10), transparent 55%),
-    radial-gradient(900px 480px at 92% 0%, rgba(107, 154, 133, 0.10), transparent 50%),
-    radial-gradient(700px 400px at 50% 100%, rgba(155, 142, 196, 0.06), transparent 55%),
-    var(--bg);
+  background: #ffffff;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -123,7 +119,7 @@ a:hover {
   z-index: 100;
   height: var(--header-h);
   backdrop-filter: blur(18px) saturate(1.2);
-  background: rgba(250, 246, 241, 0.82);
+  background: rgba(255, 255, 255, 0.92);
   border-bottom: 1px solid var(--border);
 }
 
@@ -207,7 +203,7 @@ a:hover {
   translate: -50% 0;
   width: min(680px, 88vw);
   height: 300px;
-  background: radial-gradient(closest-side, var(--accent-glow), transparent 72%);
+  background: transparent;
   pointer-events: none;
   filter: blur(12px);
   opacity: 0.9;
@@ -547,9 +543,9 @@ a:hover {
 
 .project-card--visual .project-visual {
   padding: 1.35rem 1.35rem 0.55rem;
-  background:
-    radial-gradient(700px 180px at 15% 0%, rgba(224, 122, 95, 0.10), transparent 60%),
-    radial-gradient(500px 160px at 85% 20%, rgba(107, 154, 133, 0.10), transparent 55%),
+  background: transparent;
+  /* was soft wash */
+
     linear-gradient(180deg, #fff9f4, #ffffff);
 }
 
@@ -682,7 +678,7 @@ a:hover {
   position: relative;
   border-radius: 26px;
   padding: 9px;
-  background: linear-gradient(160deg, #fff8f2, #f3ebe3);
+  background: #f5f5f5;
   border: 1px solid rgba(90, 70, 55, 0.12);
   box-shadow:
     0 14px 32px rgba(90, 60, 40, 0.10),
@@ -708,7 +704,7 @@ a:hover {
   object-fit: cover;
   object-position: top center;
   border-radius: 18px;
-  background: #f0eae3;
+  background: #f0f0f0;
 }
 
 .phone-frame--sm {
@@ -737,7 +733,7 @@ a:hover {
   overflow: hidden;
   border: 1px solid rgba(90, 70, 55, 0.10);
   box-shadow: 0 12px 28px rgba(90, 60, 40, 0.09);
-  background: #f3ebe3;
+  background: #f0f0f0;
   height: 100%;
 }
 
@@ -748,7 +744,7 @@ a:hover {
   object-fit: cover;
   object-position: center top;
   display: block;
-  background: #f3ebe3;
+  background: #f0f0f0;
 }
 
 .shot-frame--hero {
@@ -784,7 +780,7 @@ a:hover {
 .shot-frame--diagram {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(160deg, #fffdf9, #f7f1ea);
+  background: #f5f5f5;
 }
 
 .shot-frame--diagram img {
@@ -827,7 +823,7 @@ a:hover {
   padding: 1.25rem 1.4rem;
   border-radius: var(--radius);
   border: 1.5px dashed rgba(107, 154, 133, 0.4);
-  background: rgba(255, 253, 249, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   box-shadow: var(--shadow-soft);
 }
 
@@ -869,10 +865,7 @@ a:hover {
 
 .talk-visual {
   padding: 1.5rem 1.5rem 0.75rem;
-  background:
-    radial-gradient(700px 180px at 12% 0%, rgba(155, 142, 196, 0.12), transparent 60%),
-    radial-gradient(500px 160px at 88% 30%, rgba(224, 122, 95, 0.10), transparent 55%),
-    linear-gradient(180deg, #faf7ff, #ffffff);
+  background: transparent;
 }
 
 .talk-slides {
@@ -1213,7 +1206,7 @@ a:hover {
   padding: 1.4rem 0 1.9rem;
   color: var(--text-muted);
   font-size: 0.88rem;
-  background: rgba(255, 253, 249, 0.6);
+  background: #ffffff;
 }
 
 .footer-inner {
