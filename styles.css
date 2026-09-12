@@ -542,11 +542,12 @@ a:hover {
 }
 
 .project-card--visual .project-visual {
-  padding: 1.35rem 1.35rem 0.55rem;
+  padding: 0.55rem 1.35rem 0.55rem;
   background: transparent;
-  /* was soft wash */
+}
 
-    linear-gradient(180deg, #fff9f4, #ffffff);
+.project-heading {
+  padding: 1.4rem 1.6rem 0;
 }
 
 /* Keep cocolog / grow gallery areas visually balanced */
