@@ -9,15 +9,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/portfolio/styles.css?v=20260912z" />
+  <link rel="stylesheet" href="/portfolio/styles.css?v=20260913a" />
   <link rel="icon" href="/portfolio/assets/brand/monogram.svg" type="image/svg+xml" />
 </head>
 <body>
+  <div id="top" tabindex="-1"></div>
   <a class="skip-link" href="#main">本文へスキップ</a>
 
-  <header class="site-header" id="top">
+  <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="/portfolio/">寺嶋 裕</a>
+      <a class="logo" href="/portfolio/#top" aria-label="寺嶋 裕">
+        <img class="logo-mark" src="/portfolio/assets/brand/monogram.svg?v=th1" alt="" width="36" height="36" decoding="async" />
+      </a>
       <nav class="nav" aria-label="メインナビゲーション">
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" id="nav-toggle">
           <span class="sr-only">メニュー</span>
@@ -311,10 +314,10 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> 寺嶋 裕</p>
-      <a href="#top" class="back-top">先頭へ</a>
+      <a href="#top" class="back-top" id="back-top">先頭へ</a>
     </div>
   </footer>
 
-  <script src="/portfolio/script.js?v=20260912c" defer></script>
+  <script src="/portfolio/script.js?v=20260913a" defer></script>
 </body>
 </html>

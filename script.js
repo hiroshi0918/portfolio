@@ -32,6 +32,16 @@
     .filter(Boolean);
   const navLinks = Array.from(document.querySelectorAll('.nav-list a[href^="#"]'));
 
+  const backTop = document.getElementById("back-top");
+  if (backTop) {
+    backTop.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      const top = document.getElementById("top");
+      if (top) top.focus({ preventScroll: true });
+    });
+  }
+
   if ("IntersectionObserver" in window && sections.length && navLinks.length) {
     const map = new Map(
       navLinks.map((a) => [a.getAttribute("href").slice(1), a])
