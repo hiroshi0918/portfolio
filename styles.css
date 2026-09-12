@@ -1778,3 +1778,11 @@ a:hover {
 .contact-icon-link:hover {
   color: var(--accent-strong);
 }
+
+
+.project-status {
+  font-size: 0.72em;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
