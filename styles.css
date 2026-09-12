@@ -3499,9 +3499,9 @@ a:hover {
   font-size: clamp(calc(1.65rem + 4px), calc(3.2vw + 4px), calc(2.1rem + 4px)) !important;
 }
 
-/* Hero name: mincho */
+/* Hero name: 筑紫A丸ゴシック (system) with Zen Maru Gothic web fallback */
 .hero-name-ja {
-  font-family: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif !important;
+  font-family: "筑紫A丸ゴシック", "TsukuARdGothic", "Tsukushi A Round Gothic", "FOT-筑紫A丸ゴシック Std", "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Noto Sans JP", sans-serif !important;
   font-weight: 700 !important;
-  letter-spacing: 0.12em !important;
+  letter-spacing: 0.1em !important;
 }
