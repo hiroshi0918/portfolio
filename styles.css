@@ -3258,6 +3258,7 @@ a:hover {
   box-shadow: 0 0 0 3px var(--sage);
 }
 
+
 /* Skill chip icons */
 .about-skills-chips li {
   display: inline-flex;
@@ -3277,6 +3278,18 @@ a:hover {
 
 .about-skills-chips .skill-icons {
   display: inline-flex;
+  flex-direction: row;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.about-skills-chips .skill-icon--wide {
+  width: 2.15rem;
+  height: 1.05rem;
+  object-fit: contain;
+}
+
+.about-skills-chips .skill-chip--multi {
+  gap: 0.45rem;
 }
