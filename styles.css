@@ -3293,3 +3293,33 @@ a:hover {
 .about-skills-chips .skill-chip--multi {
   gap: 0.45rem;
 }
+
+
+/* SQL dual icons — force horizontal (cache-bust companions) */
+.about-skills-chips li.skill-chip--multi,
+.about-skills-chips li.skill-chip--multi .skill-icons {
+  display: -webkit-inline-box !important;
+  display: inline-flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+}
+
+.about-skills-chips li.skill-chip--multi .skill-icons {
+  gap: 0.4rem !important;
+  width: auto !important;
+  max-width: none !important;
+}
+
+.about-skills-chips li.skill-chip--multi .skill-icons .skill-icon {
+  display: inline-block !important;
+  float: none !important;
+  width: 1.15rem !important;
+  height: 1.15rem !important;
+  margin: 0 !important;
+}
+
+.about-skills-chips li.skill-chip--multi .skill-icons .skill-icon--wide {
+  width: 2.4rem !important;
+  height: 1.15rem !important;
+}
