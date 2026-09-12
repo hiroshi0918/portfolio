@@ -1660,3 +1660,53 @@ a:hover {
   color: var(--accent-strong);
   border-color: var(--accent-strong);
 }
+
+
+/* Link brand icons */
+.link-icon {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  display: block;
+}
+
+.btn-store .link-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  filter: brightness(0) invert(1);
+}
+
+.btn-store:hover .link-icon {
+  filter: none;
+  /* keep readable on light hover: use current text via mask? fallback opacity */
+  opacity: 0.95;
+  /* invert back for dark text on transparent hover */
+  filter: brightness(0) saturate(100%);
+}
+
+.btn-store--grow:hover .link-icon {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(32%) saturate(900%) hue-rotate(330deg);
+}
+
+.hero-text-link--icon,
+.contact-icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.hero-text-link--icon .link-icon,
+.contact-icon-link .link-icon {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.85;
+}
+
+.contact-icon-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-icon-link:hover {
+  color: var(--accent-strong);
+}
