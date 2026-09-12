@@ -1136,12 +1136,21 @@ a:hover {
 }
 
 .contact-inner {
-  max-width: 720px;
+  max-width: none;
+}
+
+.contact-card {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.7rem 1.75rem;
+  box-shadow: var(--shadow);
 }
 
 .contact-lead {
   color: var(--text-soft);
-  margin: 0 0 1.4rem;
+  margin: 0 0 1rem;
 }
 
 .contact-lead code {
@@ -1647,7 +1656,11 @@ a:hover {
 }
 
 .contact-lead {
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.85rem;
+}
+
+.contact-card .contact-note {
+  margin: 0;
 }
 
 @media (max-width: 900px) {
