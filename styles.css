@@ -3410,3 +3410,8 @@ a:hover {
   border-color: var(--navy) !important;
   box-shadow: 0 0 0 4px rgba(168, 198, 159, 0.45) !important;
 }
+
+/* Grow note red */
+.project-proof--note {
+  color: #c45c4a !important;
+}
