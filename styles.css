@@ -3438,8 +3438,8 @@ a:hover {
 
 .timeline-marker {
   box-sizing: border-box !important;
-  width: 14px !important;
-  height: 12px !important;
+  width: 18px !important;
+  height: 10px !important;
   margin: 0 !important;
   padding: 0 !important;
   justify-self: center !important;
