@@ -3418,58 +3418,56 @@ a:hover {
 }
 
 
-/* Timeline markers: downward triangles; current stays a filled circle */
+/* Timeline markers: top-aligned with cards, centered on rail */
+.timeline {
+  padding-left: 0;
+}
+
+.timeline::before {
+  left: 12px !important;
+  width: 2px !important;
+  transform: translateX(-50%) !important;
+  margin-left: 0 !important;
+}
+
+.timeline-item {
+  grid-template-columns: 24px 1fr !important;
+  align-items: start !important;
+  gap: 1rem !important;
+}
+
 .timeline-marker {
-  width: 0 !important;
-  height: 0 !important;
-  margin-top: 1.05rem !important;
-  margin-left: 4px !important;
+  box-sizing: border-box !important;
+  width: 14px !important;
+  height: 12px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  justify-self: center !important;
+  align-self: start !important;
+  border: none !important;
   border-radius: 0 !important;
-  background: transparent !important;
-  border-style: solid !important;
-  border-width: 9px 7px 0 7px !important;
-  border-color: var(--navy) transparent transparent transparent !important;
+  background: var(--navy) !important;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
   box-shadow: none !important;
 }
 
 .timeline-item--edu .timeline-marker {
-  border-width: 9px 7px 0 7px !important;
-  border-color: #9aa3ad transparent transparent transparent !important;
-  background: transparent !important;
+  background: #9aa3ad !important;
+  border: none !important;
   box-shadow: none !important;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
 
 .timeline-item--current .timeline-marker {
   width: 14px !important;
   height: 14px !important;
-  margin-top: 1rem !important;
-  margin-left: 5px !important;
-  border-radius: 50% !important;
-  border: 2px solid var(--navy) !important;
   background: var(--sage) !important;
+  border: 2px solid var(--navy) !important;
+  border-radius: 50% !important;
+  clip-path: none !important;
   box-shadow: 0 0 0 4px rgba(168, 198, 159, 0.45) !important;
 }
 
-
-/* Timeline markers centered on the vertical rail */
-.timeline-item {
-  grid-template-columns: 24px 1fr;
-}
-
-.timeline-marker,
-.timeline-item--edu .timeline-marker,
-.timeline-item--current .timeline-marker,
 .timeline--compact .timeline-marker {
-  justify-self: center !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-/* triangle: 14px wide (7+7) — keep visual width, no side margins */
-.timeline-marker {
-  margin-top: 1.1rem !important;
-}
-
-.timeline-item--current .timeline-marker {
-  margin-top: 1.05rem !important;
+  margin-top: 0 !important;
 }
