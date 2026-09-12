@@ -2932,3 +2932,84 @@ body {
 .logo-mark {
   box-shadow: 0 6px 16px rgba(26, 69, 120, 0.22);
 }
+
+
+/* =========================================================
+   Buttons — calmer, less shouty
+   ========================================================= */
+
+.btn-store,
+.btn-store--grow {
+  min-height: 2.5rem;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid rgba(26, 69, 120, 0.35);
+  background: #fff;
+  color: var(--accent-strong);
+  font-weight: 600;
+  box-shadow: none;
+  filter: none;
+}
+
+.btn-store .link-icon,
+.btn-store--grow .link-icon {
+  filter: none;
+  opacity: 0.9;
+}
+
+.btn-store:hover,
+.btn-store--grow:hover {
+  background: rgba(42, 95, 158, 0.06);
+  border-color: var(--accent-strong);
+  color: var(--accent-strong);
+  transform: none;
+  box-shadow: none;
+  filter: none;
+}
+
+.btn-store:hover .link-icon,
+.btn-store--grow:hover .link-icon {
+  filter: none;
+  opacity: 1;
+}
+
+.btn-store:active,
+.btn-store--grow:active {
+  background: rgba(42, 95, 158, 0.1);
+  transform: none;
+  filter: none;
+  box-shadow: none;
+}
+
+.btn-store:focus-visible,
+.btn-store--grow:focus-visible {
+  box-shadow: var(--state-focus);
+}
+
+.btn-store--grow {
+  background: rgba(42, 95, 158, 0.08);
+  border-color: rgba(26, 69, 120, 0.4);
+  color: var(--accent-strong);
+}
+
+.btn-store.is-error,
+.btn-store--grow.is-error {
+  background: var(--state-error-bg);
+  border-color: var(--state-error-border);
+  color: var(--state-error);
+}
+
+.btn-store.is-error:hover,
+.btn-store--grow.is-error:hover {
+  background: #f8e0e0;
+  border-color: var(--state-error);
+  color: var(--state-error);
+}
+
+.btn-store.is-loading::after,
+.btn-store[aria-busy="true"]::after,
+.btn-store--grow.is-loading::after,
+.btn-store--grow[aria-busy="true"]::after {
+  border-color: rgba(26, 69, 120, 0.2);
+  border-top-color: var(--accent-strong);
+}
