@@ -978,8 +978,14 @@ a:hover {
 .talk-links {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   gap: 0.55rem;
   margin-top: 0.15rem;
+}
+
+.talk-links .hero-text-link {
+  align-self: flex-end;
+  margin-left: 0;
 }
 
 /* Skills */
