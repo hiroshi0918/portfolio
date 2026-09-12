@@ -247,15 +247,20 @@ a:hover {
 
 .hero-title {
   margin: 0 0 1.35rem;
-  display: grid;
-  gap: 0.4rem;
+}
+
+.hero-name-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.35rem 0.7rem;
 }
 
 .hero-name-ja {
   font-size: clamp(2.4rem, 7vw, 3.7rem);
   font-weight: 700;
   letter-spacing: 0.06em;
-  line-height: 1.15;
+  line-height: 1;
   color: var(--text);
 }
 
@@ -265,7 +270,9 @@ a:hover {
   font-weight: 500;
   color: var(--text-muted);
   letter-spacing: 0.04em;
-  align-self: flex-end;
+  line-height: 1;
+  /* optically sit on the CJK glyph bottom */
+  transform: translateY(-0.06em);
 }
 
 .hero-lead {
@@ -1691,27 +1698,7 @@ a:hover {
 }
 
 
-.hero-title {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  gap: 0.45rem 0.85rem;
-}
-.hero-age {
-  font-family: var(--font-display);
-  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
-  font-weight: 600;
-  color: var(--text-muted);
-  letter-spacing: 0.02em;
-  align-self: flex-end;
-  padding-bottom: 0.18em;
-}
-.hero-name-en {
-  padding-bottom: 0.22em;
-}
-.hero-age::after {
-  content: "";
-}
+/* hero name alignment handled above via .hero-name-group */
 
 
 /* Clear external/store links — not pill tags */
