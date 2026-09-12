@@ -3415,3 +3415,36 @@ a:hover {
 .project-proof--note {
   color: #c45c4a !important;
 }
+
+
+/* Timeline markers: downward triangles; current stays a filled circle */
+.timeline-marker {
+  width: 0 !important;
+  height: 0 !important;
+  margin-top: 1.05rem !important;
+  margin-left: 4px !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  border-style: solid !important;
+  border-width: 9px 7px 0 7px !important;
+  border-color: var(--navy) transparent transparent transparent !important;
+  box-shadow: none !important;
+}
+
+.timeline-item--edu .timeline-marker {
+  border-width: 9px 7px 0 7px !important;
+  border-color: #9aa3ad transparent transparent transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.timeline-item--current .timeline-marker {
+  width: 14px !important;
+  height: 14px !important;
+  margin-top: 1rem !important;
+  margin-left: 5px !important;
+  border-radius: 50% !important;
+  border: 2px solid var(--navy) !important;
+  background: var(--sage) !important;
+  box-shadow: 0 0 0 4px rgba(168, 198, 159, 0.45) !important;
+}
