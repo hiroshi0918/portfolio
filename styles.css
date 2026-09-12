@@ -1082,7 +1082,7 @@ a:hover {
   display: grid;
   grid-template-columns: 24px 1fr;
   gap: 1rem;
-  align-items: start;
+  align-items: center;
 }
 
 .timeline-marker {
@@ -3432,7 +3432,7 @@ a:hover {
 
 .timeline-item {
   grid-template-columns: 24px 1fr !important;
-  align-items: start !important;
+  align-items: center !important;
   gap: 1rem !important;
 }
 
@@ -3443,7 +3443,7 @@ a:hover {
   margin: 0 !important;
   padding: 0 !important;
   justify-self: center !important;
-  align-self: start !important;
+  align-self: center !important;
   border: none !important;
   border-radius: 0 !important;
   background: var(--navy) !important;
@@ -3479,4 +3479,17 @@ a:hover {
   background: transparent;
   border: none;
   box-shadow: none;
+}
+
+/* Timeline markers vertically centered with cards */
+.timeline-item {
+  align-items: center !important;
+}
+
+.timeline-marker,
+.timeline-item--edu .timeline-marker,
+.timeline-item--current .timeline-marker,
+.timeline--compact .timeline-marker {
+  align-self: center !important;
+  margin-top: 0 !important;
 }
