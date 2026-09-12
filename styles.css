@@ -3323,3 +3323,35 @@ a:hover {
   width: 2.4rem !important;
   height: 1.15rem !important;
 }
+
+
+/* SQL chip: 3-column grid = PG | MySQL | label (cannot stack) */
+.about-skills-chips > li.skill-chip--multi {
+  display: inline-grid !important;
+  grid-auto-flow: column !important;
+  grid-template-columns: auto auto auto !important;
+  grid-template-rows: auto !important;
+  align-items: center !important;
+  justify-content: start !important;
+  column-gap: 0.4rem !important;
+  row-gap: 0 !important;
+  width: max-content !important;
+  max-width: none !important;
+}
+
+.about-skills-chips > li.skill-chip--multi > .skill-icon {
+  display: block !important;
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+}
+
+.about-skills-chips > li.skill-chip--multi > .skill-icon--wide {
+  width: 2.6rem !important;
+  height: 1.2rem !important;
+}
+
+.about-skills-chips > li.skill-chip--multi > span {
+  white-space: nowrap !important;
+}
