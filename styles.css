@@ -4,51 +4,56 @@
    ========================================================= */
 
 :root {
-  /* Strict 4-color palette only */
-  --cream: #F6F3E6;
-  --mint: #A3D7C8;
-  --aqua: #80C8D0;
-  --teal: #4AA3B3;
+  /* Palette */
+  --sage: #A8C69F;
+  --ink: #2D3436;
+  --cloud: #F8F9FA;
+  --navy: #2E4053;
+  --lime: #D4E09B;
+  --slate: #34495E;
+  --snow: #FDFEFE;
 
-  --bg: var(--mint);
-  --bg-elevated: var(--cream);
-  --bg-card: var(--cream);
-  --bg-card-hover: var(--cream);
-  --border: var(--aqua);
-  --border-strong: var(--teal);
-  --text: var(--teal);
-  --text-muted: var(--aqua);
-  --text-soft: var(--teal);
-  --accent: var(--teal);
-  --accent-strong: var(--teal);
-  --accent-sage: var(--mint);
-  --accent-lavender: var(--aqua);
-  --accent-warm: var(--aqua);
+  --bg: var(--cloud);
+  --bg-elevated: var(--snow);
+  --bg-card: var(--snow);
+  --bg-card-hover: var(--cloud);
+  --border: rgba(45, 52, 54, 0.12);
+  --border-strong: rgba(46, 64, 83, 0.28);
+  --text: var(--ink);
+  --text-muted: var(--slate);
+  --text-soft: var(--navy);
+  --accent: var(--navy);
+  --accent-strong: var(--navy);
+  --accent-sage: var(--sage);
+  --accent-lavender: var(--slate);
+  --accent-warm: var(--lime);
   --accent-glow: transparent;
-  --sage-soft: var(--mint);
-  --lavender-soft: var(--aqua);
-  --coral-soft: var(--aqua);
+  --sage-soft: var(--sage);
+  --lavender-soft: var(--lime);
+  --coral-soft: var(--lime);
   --radius: 10px;
   --radius-sm: 6px;
   --radius-pill: 999px;
-  --shadow: none;
-  --shadow-soft: none;
+  --shadow: 0 8px 24px rgba(45, 52, 54, 0.08);
+  --shadow-soft: 0 4px 12px rgba(45, 52, 54, 0.05);
   --font-sans: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
   --font-display: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   --container: 1120px;
   --header-h: 68px;
-  --focus: 0 0 0 3px var(--aqua);
-  --state-focus: 0 0 0 3px var(--aqua);
-  --state-focus-error: 0 0 0 3px var(--teal);
-  --state-error: var(--teal);
-  --state-error-bg: var(--cream);
-  --state-error-border: var(--teal);
-  --ink: var(--teal);
-  --blue: var(--teal);
-  --white: var(--cream);
-  --fog: var(--mint);
-  --slate: var(--aqua);
-  --earth: var(--teal);
+  --focus: 0 0 0 3px rgba(46, 64, 83, 0.35);
+  --state-focus: 0 0 0 3px rgba(46, 64, 83, 0.35);
+  --state-focus-error: 0 0 0 3px rgba(45, 52, 54, 0.35);
+  --state-error: var(--ink);
+  --state-error-bg: var(--cloud);
+  --state-error-border: var(--slate);
+  --cream: var(--snow);
+  --mint: var(--sage);
+  --aqua: var(--slate);
+  --teal: var(--navy);
+  --blue: var(--navy);
+  --white: var(--snow);
+  --fog: var(--cloud);
+  --earth: var(--ink);
 }
 
 *,
@@ -3033,98 +3038,90 @@ body {
 
 
 /* =========================================================
-   Strict palette — #F6F3E6 #A3D7C8 #80C8D0 #4AA3B3 only
+   Palette — #A8C69F #2D3436 #F8F9FA #2E4053 #D4E09B #34495E #FDFEFE
    ========================================================= */
 
 body {
-  background: var(--mint);
-  color: var(--teal);
+  background:
+    radial-gradient(1000px 480px at 8% -10%, rgba(168, 198, 159, 0.45), transparent 58%),
+    radial-gradient(900px 420px at 96% 0%, rgba(212, 224, 155, 0.35), transparent 55%),
+    var(--cloud);
+  color: var(--ink);
 }
 
 a {
-  color: var(--teal);
+  color: var(--navy);
 }
 
 a:hover {
-  color: var(--aqua);
+  color: var(--ink);
 }
 
 .site-header {
-  background: var(--cream);
-  border-bottom: 1px solid var(--aqua);
-  backdrop-filter: none;
+  background: rgba(253, 254, 254, 0.94);
+  border-bottom: 1px solid rgba(45, 52, 54, 0.1);
+  backdrop-filter: blur(8px);
 }
 
 .nav-list a {
-  color: var(--teal);
+  color: var(--slate);
 }
 
 .nav-list a:hover,
 .nav-list a[aria-current="true"] {
-  color: var(--teal);
-  background: var(--mint);
+  color: var(--navy);
+  background: transparent;
 }
 
 .nav-list a[aria-current="true"]::after {
-  background: var(--teal);
+  background: var(--navy);
 }
 
 .nav-toggle {
-  background: var(--cream);
-  border-color: var(--aqua);
+  background: var(--snow);
+  border-color: rgba(46, 64, 83, 0.25);
 }
 
 .nav-toggle-bar {
-  background: var(--teal);
-}
-
-.hero {
-  border-bottom: none;
+  background: var(--ink);
 }
 
 .hero::after {
-  background: var(--aqua);
-  height: 1px;
-  opacity: 1;
-}
-
-.hero-glow {
-  display: none;
+  background: linear-gradient(90deg, transparent, var(--sage), transparent);
 }
 
 .hero-name-ja {
   background: none !important;
   -webkit-background-clip: unset !important;
   background-clip: unset !important;
-  color: var(--teal) !important;
+  color: var(--ink) !important;
 }
 
-.hero-name-en,
-.hero-lead {
-  color: var(--teal);
+.hero-name-en {
+  color: var(--slate);
 }
 
 .hero-lead {
-  opacity: 0.92;
+  color: var(--navy);
 }
 
 .hero-photo {
-  background: var(--cream);
+  background: var(--snow);
+  border: 2px solid var(--sage);
+  box-shadow: 0 14px 32px rgba(45, 52, 54, 0.12);
   outline: none;
-  box-shadow: none;
-  border: 2px solid var(--aqua);
 }
 
 .section + .section {
-  border-top: 1px solid var(--aqua);
+  border-top: 1px solid rgba(45, 52, 54, 0.1);
 }
 
 .section-head h2 {
-  color: var(--teal);
+  color: var(--ink);
 }
 
 .section-head h2::after {
-  background: var(--teal) !important;
+  background: var(--sage) !important;
   background-image: none !important;
 }
 
@@ -3134,25 +3131,23 @@ a:hover {
 .project-card,
 .talk-card,
 .ui-card {
-  background: var(--cream) !important;
-  border: 1px solid var(--aqua) !important;
-  box-shadow: none !important;
+  background: var(--snow) !important;
+  border: 1px solid rgba(45, 52, 54, 0.1) !important;
+  box-shadow: 0 10px 28px rgba(45, 52, 54, 0.07) !important;
 }
 
 .project-card:hover,
 .about-card:hover,
 .timeline-card:hover,
-.contact-card:hover,
-.talk-card:hover {
-  border-color: var(--teal) !important;
-  box-shadow: none !important;
-  background: var(--cream) !important;
+.contact-card:hover {
+  border-color: var(--sage) !important;
+  box-shadow: 0 14px 32px rgba(45, 52, 54, 0.1) !important;
 }
 
 .project-title,
 .talk-title,
 .timeline-role {
-  color: var(--teal);
+  color: var(--ink);
 }
 
 .project-summary,
@@ -3161,7 +3156,7 @@ a:hover {
 .about-skills-label,
 .about-certs-label,
 .timeline-org {
-  color: var(--aqua) !important;
+  color: var(--slate) !important;
 }
 
 .project-why,
@@ -3169,109 +3164,96 @@ a:hover {
 .talk-summary,
 .about-certs-list,
 .timeline-bullets {
-  color: var(--teal) !important;
+  color: var(--navy) !important;
 }
 
 .about-skills-chips li {
-  background: var(--mint) !important;
-  border: 1px solid var(--aqua) !important;
-  color: var(--teal) !important;
+  background: var(--lime) !important;
+  border: 1px solid var(--sage) !important;
+  color: var(--ink) !important;
 }
 
-.about-skills {
-  border-top-color: var(--aqua);
-}
-
+.about-skills,
 .about-certs {
-  border-top-color: var(--aqua);
+  border-top-color: rgba(45, 52, 54, 0.1);
 }
 
 .phone-frame,
 .shot-frame,
 .talk-slide {
-  background: var(--mint) !important;
-  border-color: var(--aqua) !important;
+  background: var(--cloud) !important;
+  border-color: rgba(45, 52, 54, 0.1) !important;
   box-shadow: none !important;
 }
 
 .btn-store,
 .btn-store--grow {
-  background: var(--cream) !important;
-  border: 1.5px solid var(--teal) !important;
-  color: var(--teal) !important;
+  background: var(--snow) !important;
+  border: 1.5px solid var(--navy) !important;
+  color: var(--navy) !important;
   box-shadow: none !important;
 }
 
 .btn-store--grow {
-  background: var(--mint) !important;
+  background: rgba(168, 198, 159, 0.35) !important;
+  border-color: var(--sage) !important;
+  color: var(--navy) !important;
 }
 
 .btn-store:hover,
 .btn-store--grow:hover {
-  background: var(--aqua) !important;
-  border-color: var(--teal) !important;
-  color: var(--cream) !important;
-  box-shadow: none !important;
+  background: var(--sage) !important;
+  border-color: var(--navy) !important;
+  color: var(--ink) !important;
   filter: none !important;
+  box-shadow: none !important;
 }
 
 .btn-store:hover .link-icon,
 .btn-store--grow:hover .link-icon {
-  filter: brightness(0) invert(1);
-  opacity: 1;
-}
-
-.btn-store .link-icon,
-.btn-store--grow .link-icon {
   filter: none;
+  opacity: 1;
 }
 
 .hero-text-link,
 .contact-icon-link,
 .contact-note a,
 .back-top {
-  color: var(--teal) !important;
+  color: var(--navy) !important;
 }
 
 .hero-text-link:hover,
 .contact-icon-link:hover,
 .contact-note a:hover,
 .back-top:hover {
-  color: var(--aqua) !important;
-  background: transparent;
+  color: var(--ink) !important;
 }
 
 .site-footer {
-  background: transparent;
-  border-top: 1px solid var(--aqua);
-  color: var(--teal);
-}
-
-.logo-mark {
-  box-shadow: none;
+  border-top: 1px solid rgba(45, 52, 54, 0.1);
+  color: var(--slate);
 }
 
 .timeline-marker {
-  background: var(--cream) !important;
-  border: 2px solid var(--teal) !important;
+  background: var(--snow) !important;
+  border: 2px solid var(--navy) !important;
   box-shadow: none !important;
 }
 
-.timeline-item::before,
-.timeline::before {
-  background: var(--aqua) !important;
-}
-
 .skip-link {
-  background: var(--teal);
-  color: var(--cream);
+  background: var(--navy);
+  color: var(--snow);
 }
 
-:focus-visible {
-  box-shadow: 0 0 0 3px var(--aqua);
+.logo-mark {
+  box-shadow: 0 6px 14px rgba(46, 64, 83, 0.2);
 }
 
 .section-projects,
 .section-talks {
   background: transparent !important;
+}
+
+:focus-visible {
+  box-shadow: 0 0 0 3px var(--sage);
 }
