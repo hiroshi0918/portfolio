@@ -222,7 +222,7 @@ a:hover {
 
 .hero-layout {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 1fr;
   gap: 2.5rem;
   align-items: center;
 }
@@ -1465,6 +1465,7 @@ a:hover {
 
 /* Profile photo in hero — near-full portrait, soft rounded frame */
 .hero-photo {
+  order: -1;
   justify-self: center;
   width: min(280px, 70vw);
   aspect-ratio: 3 / 4;
