@@ -1,13 +1,13 @@
 /* =========================================================
-   Hiroshi Terashima (寺嶋 裕) Portfolio — soft warm light
+   Hiroshi Terashima (寺嶋 裕) Portfolio — editorial cool blue
    Base path: /portfolio/
    ========================================================= */
 
 :root {
-  --bg: #ffffff;
+  --bg: #eef2f7;
   --bg-elevated: #ffffff;
   --bg-card: #ffffff;
-  --bg-card-hover: #f7f7f7;
+  --bg-card-hover: #f5f8fc;
   --border: rgba(40, 60, 90, 0.12);
   --border-strong: rgba(40, 60, 90, 0.22);
   --text: #1c2430;
@@ -51,7 +51,7 @@ body {
   font-size: 1rem;
   line-height: 1.8;
   color: var(--text);
-  background: #ffffff;
+  background: var(--bg);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -512,16 +512,15 @@ a:hover {
   padding: 0.5rem 0.9rem;
   border-radius: var(--radius-pill);
   background: var(--sage-soft);
-  border: 1px solid rgba(107, 154, 133, 0.28);
-  color: #3f6b58;
+  border: 1px solid rgba(61, 111, 159, 0.22);
+  color: var(--text-soft);
   font-size: 0.85rem;
   font-weight: 600;
 }
 
 /* Projects */
 .section-projects {
-  background:
-    linear-gradient(180deg, transparent, rgba(61, 111, 159, 0.04) 18%, rgba(107, 154, 133, 0.05) 70%, transparent);
+  background: transparent;
 }
 
 .project-grid {
@@ -544,7 +543,7 @@ a:hover {
 
 .project-card:hover {
   border-color: rgba(61, 111, 159, 0.28);
-  box-shadow: 0 14px 40px rgba(90, 60, 40, 0.11);
+  box-shadow: 0 14px 40px rgba(30, 50, 80, 0.11);
   transform: translateY(-2px);
 }
 
@@ -590,8 +589,8 @@ a:hover {
 
 .project-badge-shipped {
   background: var(--sage-soft);
-  color: #3f6b58;
-  border: 1px solid rgba(107, 154, 133, 0.35);
+  color: var(--text-soft);
+  border: 1px solid rgba(61, 111, 159, 0.25);
 }
 
 .project-badge-web {
@@ -660,7 +659,7 @@ a:hover {
 .project-stack span {
   padding: 0.32rem 0.65rem;
   border-radius: 10px;
-  background: rgba(107, 154, 133, 0.10);
+  background: rgba(61, 111, 159, 0.08);
   border: 1px solid rgba(107, 154, 133, 0.22);
   color: #3f5f52;
   font-size: 0.78rem;
@@ -693,9 +692,9 @@ a:hover {
   border-radius: 26px;
   padding: 9px;
   background: #f5f5f5;
-  border: 1px solid rgba(90, 70, 55, 0.12);
+  border: 1px solid rgba(40, 60, 90, 0.12);
   box-shadow:
-    0 14px 32px rgba(90, 60, 40, 0.10),
+    0 14px 32px rgba(30, 50, 80, 0.10),
     inset 0 0 0 1px rgba(255, 255, 255, 0.7);
 }
 
@@ -708,7 +707,7 @@ a:hover {
   width: 26%;
   height: 5px;
   border-radius: var(--radius-pill);
-  background: rgba(90, 70, 55, 0.18);
+  background: rgba(40, 60, 90, 0.18);
   z-index: 1;
 }
 
@@ -745,8 +744,8 @@ a:hover {
   position: relative;
   border-radius: 18px;
   overflow: hidden;
-  border: 1px solid rgba(90, 70, 55, 0.10);
-  box-shadow: 0 12px 28px rgba(90, 60, 40, 0.09);
+  border: 1px solid rgba(40, 60, 90, 0.10);
+  box-shadow: 0 12px 28px rgba(30, 50, 80, 0.09);
   background: #f0f0f0;
   height: 100%;
 }
@@ -856,8 +855,7 @@ a:hover {
 
 /* Talks */
 .section-talks {
-  background:
-    linear-gradient(180deg, transparent, rgba(155, 142, 196, 0.05) 20%, rgba(61, 111, 159, 0.04) 65%, transparent);
+  background: transparent;
 }
 
 .talk-card {
@@ -873,7 +871,7 @@ a:hover {
 
 .talk-card:hover {
   border-color: rgba(155, 142, 196, 0.35);
-  box-shadow: 0 14px 40px rgba(90, 60, 40, 0.11);
+  box-shadow: 0 14px 40px rgba(30, 50, 80, 0.11);
   transform: translateY(-2px);
 }
 
@@ -892,9 +890,9 @@ a:hover {
   margin: 0;
   border-radius: 14px;
   overflow: hidden;
-  border: 1px solid rgba(90, 70, 55, 0.10);
-  box-shadow: 0 10px 24px rgba(90, 60, 40, 0.08);
-  background: #fff8f2;
+  border: 1px solid rgba(40, 60, 90, 0.10);
+  box-shadow: 0 10px 24px rgba(30, 50, 80, 0.08);
+  background: #f5f8fc;
 }
 
 .talk-slide img {
@@ -1027,7 +1025,7 @@ a:hover {
   color: var(--text-soft);
   font-size: 0.9rem;
   padding: 0.32rem 0;
-  border-bottom: 1px solid rgba(90, 70, 55, 0.06);
+  border-bottom: 1px solid rgba(40, 60, 90, 0.06);
 }
 
 .skill-group li:last-child {
@@ -1094,8 +1092,8 @@ a:hover {
 }
 
 .timeline-item--highlight .timeline-card {
-  border-color: rgba(107, 154, 133, 0.35);
-  background: linear-gradient(135deg, rgba(107, 154, 133, 0.08), var(--bg-card) 48%);
+  border-color: rgba(61, 111, 159, 0.25);
+  background: linear-gradient(135deg, rgba(61, 111, 159, 0.06), var(--bg-card) 48%);
 }
 
 .timeline-period {
@@ -1118,9 +1116,9 @@ a:hover {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.02em;
-  color: #3f6b58;
+  color: var(--text-soft);
   background: var(--sage-soft);
-  border: 1px solid rgba(107, 154, 133, 0.35);
+  border: 1px solid rgba(61, 111, 159, 0.25);
 }
 
 .timeline-role {
@@ -1423,7 +1421,7 @@ a:hover {
   margin: 0.15rem 0 0;
   padding: 0.85rem 1rem;
   border-radius: var(--radius-sm);
-  background: rgba(155, 142, 196, 0.08);
+  background: rgba(61, 111, 159, 0.06);
   border: 1px solid rgba(155, 142, 196, 0.28);
 }
 
@@ -1469,9 +1467,9 @@ a:hover {
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: #3f6b58;
+  color: var(--text-soft);
   background: var(--sage-soft);
-  border: 1px solid rgba(107, 154, 133, 0.35);
+  border: 1px solid rgba(61, 111, 159, 0.25);
   vertical-align: middle;
 }
 
@@ -1484,7 +1482,7 @@ a:hover {
   border-radius: 28px;
   overflow: hidden;
   box-shadow:
-    0 20px 44px rgba(90, 70, 55, 0.14),
+    0 20px 44px rgba(40, 60, 90, 0.14),
     0 0 0 6px rgba(255, 253, 249, 0.95),
     0 0 0 8px rgba(61, 111, 159, 0.22);
   background: var(--bg-elevated);
@@ -1502,7 +1500,7 @@ a:hover {
     width: min(200px, 56vw);
     border-radius: 22px;
     box-shadow:
-      0 14px 30px rgba(90, 70, 55, 0.12),
+      0 14px 30px rgba(40, 60, 90, 0.12),
       0 0 0 4px rgba(255, 253, 249, 0.95),
       0 0 0 6px rgba(61, 111, 159, 0.2);
   }
@@ -1585,8 +1583,8 @@ a:hover {
   padding: 0.4rem 0.75rem;
   border-radius: var(--radius-pill);
   background: var(--sage-soft);
-  border: 1px solid rgba(107, 154, 133, 0.28);
-  color: #3f6b58;
+  border: 1px solid rgba(61, 111, 159, 0.22);
+  color: var(--text-soft);
   font-size: 0.82rem;
   font-weight: 600;
 }
@@ -2079,3 +2077,67 @@ a:hover {
   box-shadow: none !important;
 }
 
+/* =========================================================
+   Surface contrast — cool page, white cards
+   ========================================================= */
+
+body {
+  background: var(--bg);
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.site-footer {
+  background: transparent;
+  border-top: 1px solid var(--border);
+}
+
+.about-card,
+.about-aside,
+.contact-card,
+.timeline-card,
+.project-card,
+.talk-card {
+  background: #ffffff;
+  border: 1px solid rgba(40, 60, 90, 0.12);
+  box-shadow: 0 8px 24px rgba(30, 50, 80, 0.06);
+}
+
+.project-card:hover,
+.talk-card:hover,
+.timeline-card:hover {
+  border-color: rgba(47, 95, 143, 0.35);
+  box-shadow: 0 10px 28px rgba(30, 50, 80, 0.09);
+}
+
+.hero {
+  background: transparent;
+}
+
+.phone-frame,
+.shot-frame,
+.talk-slide {
+  background: #e8eef5;
+  border-color: rgba(40, 60, 90, 0.12);
+  box-shadow: none;
+}
+
+.hero-photo {
+  background: #ffffff;
+  outline-color: rgba(40, 60, 90, 0.16);
+}
+
+/* kill any remaining warm soft fills */
+.nav-list a:hover,
+.nav-list a[aria-current="true"],
+.btn-ghost,
+.tag,
+.back-top:hover {
+  background: rgba(61, 111, 159, 0.08);
+}
+
+.project-proof--note {
+  color: var(--text-muted);
+}
