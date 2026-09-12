@@ -3542,18 +3542,21 @@ a:hover {
 .section-head h2 {
   position: relative !important;
   display: inline-flex !important;
-  align-items: center !important;
+  align-items: stretch !important;
   gap: 0.65rem !important;
   padding-bottom: 0 !important;
   padding-left: 0 !important;
+  line-height: 1.15 !important;
 }
 
 .section-head h2::before {
   content: "" !important;
   display: block !important;
   flex: 0 0 auto !important;
+  align-self: stretch !important;
   width: 5px !important;
-  height: 0.92em !important;
+  height: auto !important;
+  min-height: 100% !important;
   border-radius: 1px !important;
   background: #A8C69F !important;
 }
