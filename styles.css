@@ -3274,3 +3274,9 @@ a:hover {
   display: block;
   border-radius: 3px;
 }
+
+.about-skills-chips .skill-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
