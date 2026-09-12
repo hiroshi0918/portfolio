@@ -1094,6 +1094,14 @@ a:hover {
   letter-spacing: 0.03em;
   color: var(--text);
 }
+.timeline-company {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--text-soft);
+}
+
 
 .timeline-org {
   margin: 0 0 0.7rem;
