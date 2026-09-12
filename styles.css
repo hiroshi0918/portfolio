@@ -1817,3 +1817,12 @@ a:hover {
 .nav-list a {
   text-decoration: none;
 }
+
+
+.hero-actions .hero-text-link {
+  margin-left: 0;
+}
+
+.hero-actions {
+  gap: 1rem;
+}
