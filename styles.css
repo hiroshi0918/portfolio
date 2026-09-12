@@ -3306,7 +3306,7 @@ a:hover {
 }
 
 .about-skills-chips li.skill-chip--multi .skill-icons {
-  gap: 0.4rem !important;
+  gap: 0.12rem !important;
   width: auto !important;
   max-width: none !important;
 }
@@ -3333,7 +3333,7 @@ a:hover {
   grid-template-rows: auto !important;
   align-items: center !important;
   justify-content: start !important;
-  column-gap: 0.4rem !important;
+  column-gap: 0.15rem !important;
   row-gap: 0 !important;
   width: max-content !important;
   max-width: none !important;
@@ -3354,4 +3354,58 @@ a:hover {
 
 .about-skills-chips > li.skill-chip--multi > span {
   white-space: nowrap !important;
+  margin-left: 0.3rem !important;
+}
+
+
+/* Career: company then role; edu gray; current marker */
+.timeline-company {
+  display: block;
+  margin: 0 0 0.15rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.timeline-role {
+  margin: 0 0 0.55rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--slate);
+}
+
+.timeline--compact .timeline-company {
+  font-size: 1.05rem;
+  margin-bottom: 0.1rem;
+}
+
+.timeline--compact .timeline-role {
+  font-size: 0.9rem;
+  margin-bottom: 0.45rem;
+}
+
+.timeline-item--edu .timeline-card {
+  background: #eef1f4 !important;
+  border-color: rgba(45, 52, 54, 0.12) !important;
+  box-shadow: none !important;
+}
+
+.timeline-item--edu .timeline-marker {
+  border-color: #9aa3ad !important;
+  background: #eef1f4 !important;
+  box-shadow: none !important;
+}
+
+.timeline-item--edu .timeline-company,
+.timeline-item--edu .timeline-period,
+.timeline-item--edu .timeline-org {
+  color: #5c6770 !important;
+}
+
+.timeline-item--current .timeline-marker {
+  background: var(--sage) !important;
+  border-color: var(--navy) !important;
+  box-shadow: 0 0 0 4px rgba(168, 198, 159, 0.45) !important;
 }
