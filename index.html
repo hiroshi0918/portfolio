@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/portfolio/styles.css?v=20260914j" />
+  <link rel="stylesheet" href="/portfolio/styles.css?v=20260913k" />
   <link rel="icon" href="/portfolio/assets/brand/monogram.svg" type="image/svg+xml" />
 </head>
 <body>
@@ -53,20 +53,27 @@
               証券営業からスタートして、現在はデータエンジニアとして主にデータ基盤構築などを行ってます。趣味でアプリ開発も行っています。
             </p>
             <div class="hero-actions">
-              <a class="hero-text-link hero-text-link--icon" href="https://github.com/hiroshi0918" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/github.svg" alt="" width="16" height="16" decoding="async" /><span>GitHub</span></a>
-              <a class="hero-text-link hero-text-link--icon" href="https://zenn.dev/htera" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/zenn.svg" alt="" width="16" height="16" decoding="async" /><span>Zenn</span></a>
+              <a class="hero-text-link hero-text-link--icon" href="https://github.com/hiroshi0918" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/github.svg" alt="" width="16" height="16" decoding="async" /><span>GitHub</span><span class="sr-only">（新しいタブで開きます）</span></a>
+              <a class="hero-text-link hero-text-link--icon" href="https://zenn.dev/htera" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/zenn.svg" alt="" width="16" height="16" decoding="async" /><span>Zenn</span><span class="sr-only">（新しいタブで開きます）</span></a>
             </div>
           </div>
           <div class="hero-photo">
-            <img
-              src="/portfolio/assets/profile/portrait.jpg"
-              srcset="/portfolio/assets/profile/portrait-sm.jpg 450w, /portfolio/assets/profile/portrait.jpg 900w"
-              sizes="(max-width: 720px) 200px, 280px"
-              alt="寺嶋 裕のプロフィール写真"
-              width="900"
-              height="1200"
-              decoding="async"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="/portfolio/assets/profile/portrait-sm.webp 310w, /portfolio/assets/profile/portrait.webp 620w"
+                sizes="(max-width: 720px) 220px, 310px"
+              />
+              <img
+                src="/portfolio/assets/profile/portrait.jpg"
+                srcset="/portfolio/assets/profile/portrait-sm.jpg 310w, /portfolio/assets/profile/portrait.jpg 620w"
+                sizes="(max-width: 720px) 220px, 310px"
+                alt="寺嶋 裕のプロフィール写真"
+                width="620"
+                height="826"
+                fetchpriority="high"
+              />
+            </picture>
           </div>
         </div>
       </div>
@@ -88,18 +95,18 @@
           <div class="about-skills">
             <p class="about-skills-label">主な技術</p>
             <ul class="about-skills-chips">
-              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/python.png?v=3" alt="" width="18" height="18" decoding="async" /><span>Python</span></li>
-              <li class="skill-chip skill-chip--multi"><img class="skill-icon" src="/portfolio/assets/brand/skills/postgresql.png?v=4" alt="" width="18" height="18" decoding="async" /><img class="skill-icon skill-icon--wide" src="/portfolio/assets/brand/skills/mysql.png?v=4" alt="" width="40" height="18" decoding="async" /><span>SQL</span></li>
-              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/snowflake.png?v=1" alt="" width="18" height="18" decoding="async" /><span>Snowflake</span></li>
-              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/dbt.png?v=1" alt="" width="18" height="18" decoding="async" /><span>dbt</span></li>
+              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/python.webp" alt="" width="18" height="18" decoding="async" /><span>Python</span></li>
+              <li class="skill-chip skill-chip--multi"><img class="skill-icon" src="/portfolio/assets/brand/skills/postgresql.webp" alt="" width="18" height="18" decoding="async" /><img class="skill-icon skill-icon--wide" src="/portfolio/assets/brand/skills/mysql.webp" alt="" width="40" height="18" decoding="async" /><span>SQL</span></li>
+              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/snowflake.webp" alt="" width="18" height="18" decoding="async" /><span>Snowflake</span></li>
+              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/dbt.webp" alt="" width="18" height="18" decoding="async" /><span>dbt</span></li>
               <li><img class="skill-icon" src="/portfolio/assets/brand/skills/aws.svg?v=1" alt="" width="18" height="18" decoding="async" /><span>AWS</span></li>
               <li><img class="skill-icon" src="/portfolio/assets/brand/skills/terraform.svg?v=1" alt="" width="18" height="18" decoding="async" /><span>Terraform</span></li>
               <li><img class="skill-icon" src="/portfolio/assets/brand/skills/docker.svg?v=1" alt="" width="18" height="18" decoding="async" /><span>Docker</span></li>
-              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/javascript.png?v=4" alt="" width="18" height="18" decoding="async" /><span>JavaScript</span></li>
-              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/ruby.png?v=2" alt="" width="18" height="18" decoding="async" /><span>Ruby</span></li>
-              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/rails.png?v=2" alt="" width="18" height="18" decoding="async" /><span>Ruby on Rails</span></li>
+              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/javascript.webp" alt="" width="18" height="18" decoding="async" /><span>JavaScript</span></li>
+              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/ruby.webp" alt="" width="18" height="18" decoding="async" /><span>Ruby</span></li>
+              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/rails.webp" alt="" width="18" height="18" decoding="async" /><span>Ruby on Rails</span></li>
               <li><img class="skill-icon" src="/portfolio/assets/brand/skills/django.svg?v=1" alt="" width="18" height="18" decoding="async" /><span>Django</span></li>
-              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/streamlit.png?v=2" alt="" width="18" height="18" decoding="async" /><span>Streamlit</span></li>
+              <li><img class="skill-icon" src="/portfolio/assets/brand/skills/streamlit.webp" alt="" width="18" height="18" decoding="async" /><span>Streamlit</span></li>
             </ul>
           </div>
           <div class="about-certs">
@@ -203,17 +210,29 @@
             </div>
             <div class="project-visual">
               <div class="phone-gallery" role="group" aria-label="ココロパレットの画面">
-                <figure class="phone-frame">
-                  <img src="/portfolio/assets/projects/cocolog/home.png?v=appstore1" alt="ココロパレットの App Store 紹介画像 1" loading="lazy" width="390" height="844" />
+                <figure class="app-shot">
+                  <picture>
+                    <source type="image/webp" srcset="/portfolio/assets/projects/cocolog/home.webp" />
+                    <img src="/portfolio/assets/projects/cocolog/home.jpg" alt="ココロパレットの App Store 紹介画像 1" loading="lazy" width="768" height="1661" />
+                  </picture>
                 </figure>
-                <figure class="phone-frame">
-                  <img src="/portfolio/assets/projects/cocolog/voice-input.png?v=appstore1" alt="ココロパレットの App Store 紹介画像 2" loading="lazy" width="390" height="844" />
+                <figure class="app-shot">
+                  <picture>
+                    <source type="image/webp" srcset="/portfolio/assets/projects/cocolog/voice-input.webp" />
+                    <img src="/portfolio/assets/projects/cocolog/voice-input.jpg" alt="ココロパレットの App Store 紹介画像 2" loading="lazy" width="768" height="1661" />
+                  </picture>
                 </figure>
-                <figure class="phone-frame phone-frame--sm">
-                  <img src="/portfolio/assets/projects/cocolog/emotion-selection.png?v=appstore1" alt="ココロパレットの App Store 紹介画像 3" loading="lazy" width="390" height="844" />
+                <figure class="app-shot">
+                  <picture>
+                    <source type="image/webp" srcset="/portfolio/assets/projects/cocolog/emotion-selection.webp" />
+                    <img src="/portfolio/assets/projects/cocolog/emotion-selection.jpg" alt="ココロパレットの App Store 紹介画像 3" loading="lazy" width="768" height="1661" />
+                  </picture>
                 </figure>
-                <figure class="phone-frame phone-frame--sm">
-                  <img src="/portfolio/assets/projects/cocolog/summary.png?v=appstore1" alt="ココロパレットの App Store 紹介画像 4" loading="lazy" width="390" height="844" />
+                <figure class="app-shot">
+                  <picture>
+                    <source type="image/webp" srcset="/portfolio/assets/projects/cocolog/summary.webp" />
+                    <img src="/portfolio/assets/projects/cocolog/summary.jpg" alt="ココロパレットの App Store 紹介画像 4" loading="lazy" width="768" height="1661" />
+                  </picture>
                 </figure>
               </div>
             </div>
@@ -224,7 +243,7 @@
                 なるべく記録が負担にならないように音声入力やAI要約を入れました。
               </p>
               <div class="project-links">
-                <a class="btn-store btn-store--grow" href="https://apps.apple.com/jp/app/6760936737" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/app-store.svg" alt="" width="16" height="16" decoding="async" /><span>App Store で見る</span></a>
+                <a class="btn-store btn-store--grow" href="https://apps.apple.com/jp/app/6760936737" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/app-store.svg" alt="" width="16" height="16" decoding="async" /><span>App Store で見る</span><span class="sr-only">（新しいタブで開きます）</span></a>
               </div>
             </div>
           </article>
@@ -253,7 +272,7 @@
               </p>
               <p class="project-proof project-proof--note">※まだ制作途中ですが公開してます。</p>
               <div class="project-links">
-                <a class="btn-store btn-store--grow" href="https://app.grow-kids.com" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/external.svg" alt="" width="16" height="16" decoding="async" /><span>サービスサイトを見る</span></a>
+                <a class="btn-store btn-store--grow" href="https://app.grow-kids.com" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/external.svg" alt="" width="16" height="16" decoding="async" /><span>サービスサイトを見る</span><span class="sr-only">（新しいタブで開きます）</span></a>
               </div>
             </div>
           </article>
@@ -282,9 +301,9 @@
                 分析結果や工夫などをLTイベントで話しました。
               </p>
               <div class="project-links">
-                <a class="btn-store btn-store--grow" href="https://edinet-dashboard.streamlit.app" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/streamlit.svg?v=2" alt="" width="16" height="16" decoding="async" /><span>Streamlit で見る</span></a>
-                <a class="hero-text-link hero-text-link--icon" href="https://note.com/harhar2106/n/nda50c05bdfdb" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/note.svg" alt="" width="16" height="16" decoding="async" /><span>イベント登壇note</span></a>
-                <a class="hero-text-link hero-text-link--icon" href="https://github.com/hiroshi0918/edinet_data_pipeline" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/github.svg" alt="" width="16" height="16" decoding="async" /><span>GitHub</span></a>
+                <a class="btn-store btn-store--grow" href="https://edinet-dashboard.streamlit.app" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/streamlit.svg?v=2" alt="" width="16" height="16" decoding="async" /><span>Streamlit で見る</span><span class="sr-only">（新しいタブで開きます）</span></a>
+                <a class="hero-text-link hero-text-link--icon" href="https://note.com/harhar2106/n/nda50c05bdfdb" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/note.svg" alt="" width="16" height="16" decoding="async" /><span>イベント登壇note</span><span class="sr-only">（新しいタブで開きます）</span></a>
+                <a class="hero-text-link hero-text-link--icon" href="https://github.com/hiroshi0918/edinet_data_pipeline" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="/portfolio/assets/brand/github.svg" alt="" width="16" height="16" decoding="async" /><span>GitHub</span><span class="sr-only">（新しいタブで開きます）</span></a>
               </div>
             </div>
           </article>
